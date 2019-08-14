@@ -21,12 +21,13 @@ def group_numbers(sequence):
             del sequence[0]
             print('sequence after equal:', sequence)
         
-        elif sequence[0] != sequence[1]: 
+        if sequence[0] != sequence[1]: 
             group.append(sequence[0])
             del sequence[0]
             groups_list.append(group)
             group = []
             print('SEQUENCE if not equal:', sequence)
+            
             continue
     
             # seems to be stopping loop after a couple of iterations. Work out why?    
