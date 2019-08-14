@@ -41,7 +41,7 @@ def translate_groups(groups):
         result += f'{len(group)}{group[0]}'
     return result
 
-# main program
+# Basic program, single input/output
 def look_and_say(input):
     result = ''
     sequence = input_to_list(input)
@@ -49,7 +49,7 @@ def look_and_say(input):
     output = translate_groups(groups)
     return output
 
-# generate Look & Say sequence based on an input
+# Loop generating Look & Say sequence based on an input
 def main_sequence(input):
 
     while len(str(input)) < 50:    
