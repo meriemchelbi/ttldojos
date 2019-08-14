@@ -7,7 +7,8 @@ def input_to_list(input):
     sequence = [int(d) for d in input]
     return sequence
 
-# group sequence elements of same value    
+# group sequence elements of same value
+# Input sequence as list    
 def group_numbers(sequence):
     
     groups_list = []
@@ -45,13 +46,21 @@ def look_and_say(input):
     result = ''
     sequence = input_to_list(input)
     groups = group_numbers(sequence)
-    translation = translate_groups(groups)
-    return translation
+    output = translate_groups(groups)
+    return output
 
+# generate Look & Say sequence based on an input
+def main_sequence(input):
 
-input = 11122322521
-print('input:', input)
+    while len(str(input)) < 50:    
+        output = look_and_say(input)
+        print(output)
+        input = output
 
-output = look_and_say(input)
-print(output)
+# input = 1
+# print('input:', input)
 
+# output = look_and_say(input)
+# print(output)
+
+main_sequence(1)
