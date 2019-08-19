@@ -49,7 +49,7 @@ def look_and_say(input):
     output = translate_groups(groups)
     return output
 
-# Loop generating Look & Say sequence based on an input
+# Loop generating Look & Say sequence based on an input, with max length set
 def main_sequence(input):
 
     while len(str(input)) < 50:    
