@@ -43,7 +43,6 @@ def translate_groups(groups):
 
 # Basic program, single input/output
 def look_and_say(input):
-    result = ''
     sequence = input_to_list(input)
     groups = group_numbers(sequence)
     output = translate_groups(groups)
