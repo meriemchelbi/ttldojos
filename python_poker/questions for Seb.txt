@@ -1,0 +1,4 @@
+
+What does Random variable do?
+
+How can I step through my C# code? throws a bunch of errors
