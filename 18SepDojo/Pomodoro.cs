@@ -1,11 +1,9 @@
 using System;
-using Xunit;
 
-namespace _18SepDojo
+namespace _SepPomodoro
 {
-    public class UnitTest1
+    public class Pomodoro
     {
-        [Fact]
         public void Test1()
         {
 
