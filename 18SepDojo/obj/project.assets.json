@@ -5858,11 +5858,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\dojos\\ttldojos\\18SepDojo\\18SepDojo.csproj",
-      "projectName": "18SepDojo",
-      "projectPath": "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\dojos\\ttldojos\\18SepDojo\\18SepDojo.csproj",
+      "projectUniqueName": "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\18SepDojo\\PomodoroTests.csproj",
+      "projectName": "PomodoroTests",
+      "projectPath": "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\18SepDojo\\PomodoroTests.csproj",
       "packagesPath": "C:\\Users\\meriemc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\dojos\\ttldojos\\18SepDojo\\obj\\",
+      "outputPath": "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\18SepDojo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
