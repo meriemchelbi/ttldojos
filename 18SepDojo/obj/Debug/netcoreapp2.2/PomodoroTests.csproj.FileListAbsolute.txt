@@ -10,3 +10,7 @@ C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\18SepDo
 C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\18SepDojo\bin\Debug\netcoreapp2.2\PomodoroTests.pdb
 C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\18SepDojo\obj\Debug\netcoreapp2.2\PomodoroTests.dll
 C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\18SepDojo\obj\Debug\netcoreapp2.2\PomodoroTests.pdb
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\18SepDojo\obj\Debug\netcoreapp2.2\PomodoroTests.csprojAssemblyReference.cache
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\18SepDojo\obj\Debug\netcoreapp2.2\PomodoroTests.csproj.CoreCompileInputs.cache
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\18SepDojo\obj\Debug\netcoreapp2.2\PomodoroTests.dll
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\18SepDojo\obj\Debug\netcoreapp2.2\PomodoroTests.pdb
