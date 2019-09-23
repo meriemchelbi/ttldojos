@@ -5858,30 +5858,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Meriem\\.nuget\\packages\\": {},
+    "C:\\Users\\meriemc\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Meriem\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\project_skeleton\\project_skeleton.csproj",
+      "projectUniqueName": "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\project_skeleton\\project_skeleton.csproj",
       "projectName": "project_skeleton",
-      "projectPath": "C:\\Users\\Meriem\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\project_skeleton\\project_skeleton.csproj",
-      "packagesPath": "C:\\Users\\Meriem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Meriem\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\project_skeleton\\obj\\",
+      "projectPath": "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\project_skeleton\\project_skeleton.csproj",
+      "packagesPath": "C:\\Users\\meriemc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\project_skeleton\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Meriem\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\meriemc\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

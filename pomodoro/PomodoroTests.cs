@@ -10,19 +10,19 @@ namespace _SepPomodoro
 
         // Add test for anything public
 
-            [Fact]
-        public void TestTomatoCountInstantiated
-        {
+        //[Fact]
+        //public void TestTomatoCountInstantiated
+        //{
 
-        }
+        //}
 
-        public void TestTomatoCycleLengthInstantiated
-         {
-            
-         }                      
-            
+        //public void TestTomatoCycleLengthInstantiated
+        //{
+
+        //}
+
         // variable to log where in cycle? e.g. Cycle1, Pomodoro 3, short break 1, long break.
-        
+
         [Fact]        
         public void UninterruptedPomodoroTimerAddsTomato()
         {
