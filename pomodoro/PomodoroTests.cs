@@ -32,7 +32,7 @@ namespace _SepPomodoro
             pomodoro.RunTomato();
             pomodoro.RunTomato();
             // Check new tomato count based on count at start of cycle
-            Assert.Equal(3, pomodoro._tomatoCount);
+            Assert.Equal(3, pomodoro.TomatoCount);
 
         }
 
@@ -46,8 +46,11 @@ namespace _SepPomodoro
             pomodoro.RunTomato();
             stopwatch.Stop();
             TimeSpan ts = stopwatch.Elapsed;
+            TimeSpan expectedLower = new TimeSpan(00, 00, 00, 00, 10);
+            TimeSpan expectedHigher = new TimeSpan(00, 00, 00, 00, 12);
 
-            Assert.Equal(2, pomodoro._tomatoCount);
+            Assert.True(expectedLower.TotalMilliseconds <= (double) ts.TotalMilliseconds);
+            Assert.True(expectedHigher.TotalMilliseconds >= (double)ts.TotalMilliseconds);
 
         }
 

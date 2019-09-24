@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using System.Timers;
 
 namespace _SepPomodoro
@@ -6,22 +7,22 @@ namespace _SepPomodoro
     public class Pomodoro
     {
 
-        public int _tomatoCount;
-        public int _tomatoCycleLength;
-        // private static System.Timers.Timer myTimer;
+        public int TomatoCount;
+        public int TomatoCycleLength;
 
         public Pomodoro(int cycleLength)
         {
-            _tomatoCount = 0;
-            _tomatoCycleLength = cycleLength;
+            TomatoCount = 0;
+            TomatoCycleLength = cycleLength;
         }
 
         public void RunTomato()
         {
-            Timer timer = new Timer(_tomatoCycleLength);
-            timer.Start();
-            _tomatoCount++;
-            timer.Stop();
+            Thread.Sleep(TomatoCycleLength);
+            TomatoCount++;
+
+            
         }
+
     }
 }
