@@ -45,10 +45,12 @@ namespace _SepPomodoro
             pomodoro.RunTomato();
             pomodoro.RunTomato();
             stopwatch.Stop();
+
             TimeSpan ts = stopwatch.Elapsed;
             TimeSpan expectedLower = new TimeSpan(00, 00, 00, 00, 10);
             TimeSpan expectedHigher = new TimeSpan(00, 00, 00, 00, 12);
 
+            // Check 2 pomodoro cycles last approx 10ms (for cycle length of 5 ms). Can this be done with a range?
             Assert.True(expectedLower.TotalMilliseconds <= (double) ts.TotalMilliseconds);
             Assert.True(expectedHigher.TotalMilliseconds >= (double)ts.TotalMilliseconds);
 
