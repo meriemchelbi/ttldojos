@@ -23,7 +23,7 @@ namespace _SepPomodoro
 
         // variable to log where in cycle? e.g. Cycle1, Pomodoro 3, short break 1, long break.
 
-        [Fact]        
+        [Fact]
         public void UninterruptedPomodoroTimerAddsTomato()
         {
             
