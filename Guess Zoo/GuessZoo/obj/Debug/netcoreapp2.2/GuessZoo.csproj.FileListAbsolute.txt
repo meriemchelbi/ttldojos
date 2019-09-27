@@ -1,0 +1,11 @@
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Guess Zoo\GuessZoo\bin\Debug\netcoreapp2.2\GuessZoo.deps.json
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Guess Zoo\GuessZoo\bin\Debug\netcoreapp2.2\GuessZoo.runtimeconfig.json
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Guess Zoo\GuessZoo\bin\Debug\netcoreapp2.2\GuessZoo.runtimeconfig.dev.json
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Guess Zoo\GuessZoo\bin\Debug\netcoreapp2.2\GuessZoo.dll
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Guess Zoo\GuessZoo\obj\Debug\netcoreapp2.2\GuessZoo.csprojAssemblyReference.cache
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Guess Zoo\GuessZoo\obj\Debug\netcoreapp2.2\GuessZoo.csproj.CoreCompileInputs.cache
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Guess Zoo\GuessZoo\obj\Debug\netcoreapp2.2\GuessZoo.AssemblyInfoInputs.cache
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Guess Zoo\GuessZoo\obj\Debug\netcoreapp2.2\GuessZoo.AssemblyInfo.cs
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Guess Zoo\GuessZoo\bin\Debug\netcoreapp2.2\GuessZoo.pdb
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Guess Zoo\GuessZoo\obj\Debug\netcoreapp2.2\GuessZoo.dll
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Guess Zoo\GuessZoo\obj\Debug\netcoreapp2.2\GuessZoo.pdb

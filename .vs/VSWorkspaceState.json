@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\pomodoro"
+    "\\pomodoro",
+    "\\pomodoro\\obj"
   ],
-  "SelectedNode": "\\pomodoro\\PomodoroTests.csproj",
+  "SelectedNode": "\\ttldojos.sln",
   "PreviewInSolutionExplorer": false
 }

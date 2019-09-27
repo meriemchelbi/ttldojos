@@ -10,20 +10,17 @@ namespace GuessZoo.service
 
         public bool Result;
 
-        // method compare on a guess
-        // input card (to compare), descriptionType, Property string
-        // output bool
-        // calls out to functions repo- dict of descriptions mapped to comparer functions
-
         public bool CompareCards(Card selectedCard, Card guessedCard)
         {
-            Console.WriteLine("You've reached the end of the flow!");
 
-            // if AdjCompare True
-            // AND if ColCompar True
-            // AND if AnimalCompare True
-            // Result = true
-            // else Result = false
+            if(string.Equals(selectedCard.Adjective, guessedCard.Adjective) && string.Equals(selectedCard.Animal, guessedCard.Animal) && string.Equals(selectedCard.Color, guessedCard.Color))
+            {
+                Result = true;
+            }
+            else
+            {
+                Result = false;
+            }
 
             return Result;
         }

@@ -7,9 +7,10 @@ namespace GuessZoo.service
 {
     class GuessCard
     {
-        public bool Result;
+        bool result;
+        String outcome;
 
-        public Card guessedCard = new Card();
+        Card guessedCard = new Card();
 
 
         private void CaptureGuess()
@@ -25,14 +26,29 @@ namespace GuessZoo.service
 
         }
 
-        public bool SingleGuess(Card selectedCard)
+        public void SingleGuess(Card selectedCard)
         {
             CaptureGuess();
             var cardCompare = new CardComparer();
-            Result = cardCompare.CompareCards(selectedCard, guessedCard);
+            result = cardCompare.CompareCards(selectedCard, guessedCard);
 
-            return Result;
+            if(result == true)
+            {
+                outcome = "win";
+            }
+            else
+            {
+                outcome = "lose";
+            }
 
+            DisplayGuessOutcome(selectedCard);
+        }
+
+        private void DisplayGuessOutcome(Card selectedCard)
+        {
+            Console.WriteLine($"You guessed: {guessedCard.Adjective}, {guessedCard.Animal}, {guessedCard.Color}.");
+            Console.WriteLine($"We selected: {selectedCard.Adjective}, {selectedCard.Animal}, {selectedCard.Color}.");
+            Console.WriteLine($"You {outcome}!");
         }
 
 
