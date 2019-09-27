@@ -8,13 +8,28 @@ namespace GuessZoo.service
     class GuessCard
     {
         bool result;
-        String outcome;
+        string outcome;
+        Card guessedCard;
+        Card selectedCard;
+        private readonly CardComparer _cardCompare;
 
-        Card guessedCard = new Card();
+        public GuessCard()
+        {
+            _cardCompare = new CardComparer();
+        }
 
+        public void SingleGuess(Card SelectedCard)
+        {
+            selectedCard = SelectedCard;
+            CaptureGuess();
+            result = _cardCompare.CompareCards(selectedCard, guessedCard);
+            DisplayGuessOutcome();
+        }
 
         private void CaptureGuess()
         {
+            guessedCard = new Card();
+            
             Console.WriteLine("Guess the adjective?");
             guessedCard.Adjective = Console.ReadLine();
 
@@ -26,13 +41,9 @@ namespace GuessZoo.service
 
         }
 
-        public void SingleGuess(Card selectedCard)
+        private void DisplayGuessOutcome()
         {
-            CaptureGuess();
-            var cardCompare = new CardComparer();
-            result = cardCompare.CompareCards(selectedCard, guessedCard);
-
-            if(result == true)
+            if (result == true)
             {
                 outcome = "win";
             }
@@ -40,12 +51,6 @@ namespace GuessZoo.service
             {
                 outcome = "lose";
             }
-
-            DisplayGuessOutcome(selectedCard);
-        }
-
-        private void DisplayGuessOutcome(Card selectedCard)
-        {
             Console.WriteLine($"You guessed: {guessedCard.Adjective}, {guessedCard.Animal}, {guessedCard.Color}.");
             Console.WriteLine($"We selected: {selectedCard.Adjective}, {selectedCard.Animal}, {selectedCard.Color}.");
             Console.WriteLine($"You {outcome}!");

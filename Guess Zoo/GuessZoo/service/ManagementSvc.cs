@@ -7,10 +7,12 @@ namespace GuessZoo.service
     public class ManagementSvc
     {
         private readonly ListLoaderSvc _listLoaderSvc;
+        private readonly GuessCard _guessCard;
 
         public ManagementSvc()
         {
             _listLoaderSvc = new ListLoaderSvc();
+            _guessCard = new GuessCard();
         }
 
         public void Run()
@@ -31,18 +33,16 @@ namespace GuessZoo.service
 
         public void AskOrGuess(Card selectedCard)
         {
-            var guessCard = new GuessCard();
-
-            Console.WriteLine("Would you like to ask a question, or guess a card?");
+            Console.WriteLine("Would you like to ask a question, or guess a card? (enter 'guess' or 'ask')");
             string answer = Console.ReadLine();
 
             if (answer == "ask")
             {
-                Console.WriteLine("This bit isn't ready yet!");
+                Console.WriteLine("This bit hasn't been implemented yet.");
             }
             else if (answer == "guess")
             {
-                guessCard.SingleGuess(selectedCard);
+                _guessCard.SingleGuess(selectedCard);
             }
         }
     }
