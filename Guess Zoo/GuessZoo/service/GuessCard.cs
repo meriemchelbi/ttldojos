@@ -5,31 +5,15 @@ using System.Text;
 
 namespace GuessZoo.service
 {
-    class GuessCard
+    public class GuessCard
     {
-        bool result;
+        public bool Result { get; set; }
         string outcome;
-        Card guessedCard;
-        Card selectedCard;
-        private readonly CardComparer _cardCompare;
-
-        public GuessCard()
+        
+        public Card CaptureGuess()
         {
-            _cardCompare = new CardComparer();
-        }
+            var guessedCard = new Card();
 
-        public void SingleGuess(Card SelectedCard)
-        {
-            selectedCard = SelectedCard;
-            CaptureGuess();
-            result = _cardCompare.CompareCards(selectedCard, guessedCard);
-            DisplayGuessOutcome();
-        }
-
-        private void CaptureGuess()
-        {
-            guessedCard = new Card();
-            
             Console.WriteLine("Guess the adjective?");
             guessedCard.Adjective = Console.ReadLine();
 
@@ -39,11 +23,12 @@ namespace GuessZoo.service
             Console.WriteLine("Guess the animal?");
             guessedCard.Animal = Console.ReadLine();
 
+            return guessedCard;
         }
 
-        private void DisplayGuessOutcome()
+        public void DisplayGuessOutcome(Card guessedCard, Card selectedCard)
         {
-            if (result == true)
+            if (Result == true)
             {
                 outcome = "win";
             }

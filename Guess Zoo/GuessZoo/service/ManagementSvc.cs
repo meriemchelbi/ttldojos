@@ -8,11 +8,13 @@ namespace GuessZoo.service
     {
         private readonly ListLoaderSvc _listLoaderSvc;
         private readonly GuessCard _guessCard;
+        private readonly CardComparer _cardComparer;
 
         public ManagementSvc()
         {
             _listLoaderSvc = new ListLoaderSvc();
             _guessCard = new GuessCard();
+            _cardComparer = new CardComparer();
         }
 
         public void Run()
@@ -20,7 +22,15 @@ namespace GuessZoo.service
             Console.WriteLine("GuessZoo?");
             List<Card> allCards = _listLoaderSvc.GetCards();
             Card selected = PickRandomCard(allCards);
-            AskOrGuess(selected);
+            string action = AskOrGuess();
+            if (action == "ask")
+            {
+                Console.WriteLine("This bit hasn't been implemented yet.");
+            }
+            else if (action == "guess")
+            {
+                Guess(selected);
+            }
 
         }
 
@@ -31,19 +41,24 @@ namespace GuessZoo.service
             return cards[randInt];
         }
 
-        public void AskOrGuess(Card selectedCard)
+        public string AskOrGuess()
         {
-            Console.WriteLine("Would you like to ask a question, or guess a card? (enter 'guess' or 'ask')");
-            string answer = Console.ReadLine();
+            Console.WriteLine("Would you like to 'ask' a question, or 'guess' a card?");
+            string action = Console.ReadLine();
 
-            if (answer == "ask")
-            {
-                Console.WriteLine("This bit hasn't been implemented yet.");
-            }
-            else if (answer == "guess")
-            {
-                _guessCard.SingleGuess(selectedCard);
-            }
+            return action;
+                     
         }
+
+        public void Guess(Card selectedCard)
+        {
+            Card guessCard = _guessCard.CaptureGuess();
+            var result = _cardComparer.CompareCards(selectedCard, guessCard);
+            _guessCard.Result = result;
+            _guessCard.DisplayGuessOutcome(guessCard, selectedCard);
+
+        }
+
+        
     }
 }
