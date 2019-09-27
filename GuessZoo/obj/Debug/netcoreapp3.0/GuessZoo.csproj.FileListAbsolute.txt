@@ -1,0 +1,11 @@
+C:\Users\stuartr\source\repos\GuessZoo\bin\Debug\netcoreapp3.0\GuessZoo.exe
+C:\Users\stuartr\source\repos\GuessZoo\bin\Debug\netcoreapp3.0\GuessZoo.deps.json
+C:\Users\stuartr\source\repos\GuessZoo\bin\Debug\netcoreapp3.0\GuessZoo.runtimeconfig.json
+C:\Users\stuartr\source\repos\GuessZoo\bin\Debug\netcoreapp3.0\GuessZoo.runtimeconfig.dev.json
+C:\Users\stuartr\source\repos\GuessZoo\bin\Debug\netcoreapp3.0\GuessZoo.dll
+C:\Users\stuartr\source\repos\GuessZoo\bin\Debug\netcoreapp3.0\GuessZoo.pdb
+C:\Users\stuartr\source\repos\GuessZoo\obj\Debug\netcoreapp3.0\GuessZoo.csprojAssemblyReference.cache
+C:\Users\stuartr\source\repos\GuessZoo\obj\Debug\netcoreapp3.0\GuessZoo.AssemblyInfoInputs.cache
+C:\Users\stuartr\source\repos\GuessZoo\obj\Debug\netcoreapp3.0\GuessZoo.AssemblyInfo.cs
+C:\Users\stuartr\source\repos\GuessZoo\obj\Debug\netcoreapp3.0\GuessZoo.dll
+C:\Users\stuartr\source\repos\GuessZoo\obj\Debug\netcoreapp3.0\GuessZoo.pdb
