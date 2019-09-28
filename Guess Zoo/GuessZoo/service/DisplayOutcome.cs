@@ -5,7 +5,7 @@ using System.Text;
 
 namespace GuessZoo.service
 {
-    class DisplayOutcome
+    class DisplayText
     {
 
         public void DisplayGuessOutcome(Card guessedCard, Card selectedCard, bool result)
@@ -25,9 +25,19 @@ namespace GuessZoo.service
             Console.WriteLine($"You {outcome}!");
         }
 
-        public void DisplayAskOutcome(Card lastCard)
+        public void DisplayAskOutcome(List<Card> allCards)
         {
-            Console.WriteLine($"You guessed it! The animal is a {lastCard.Color}, {lastCard.Adjective}, {lastCard.Animal}.");
+            Console.WriteLine($"\nThe animal is a {allCards[0].Color}, {allCards[0].Adjective}, {allCards[0].Animal}. \n" );
+            
+        }
+
+        internal void DisplayAllCards(List<Card> allCards)
+        {
+            Console.WriteLine("\nHere are the remaining animals... \n");
+            foreach (var card in allCards)
+            {
+                Console.WriteLine($"{card.Color} {card.Adjective} {card.Animal}");
+            }
         }
     }
 }

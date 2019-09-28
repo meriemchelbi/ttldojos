@@ -11,8 +11,8 @@ namespace GuessZoo.service
         private readonly CardComparer _cardComparer;
         private readonly AskQuestion _askQuestion;
         private readonly ListFilter _listFilter;
-        private readonly DisplayOutcome _displayOutcome;
-        bool result;
+        private readonly DisplayText _displayText;
+        Dictionary<string, bool> results;
         List<Card> allCards;
 
 
@@ -23,19 +23,19 @@ namespace GuessZoo.service
             _cardComparer = new CardComparer();
             _askQuestion = new AskQuestion();
             _listFilter = new ListFilter();
-            _displayOutcome = new DisplayOutcome();
+            _displayText = new DisplayText();
+            allCards = _listLoaderSvc.GetCards();
         }
 
         public void Run()
         {
-            Console.WriteLine("GuessZoo?");
-            List<Card> allCards = _listLoaderSvc.GetCards();
+            Console.WriteLine("GuessZoo? \n");
+            _displayText.DisplayAllCards(allCards);
             Card selected = PickRandomCard(allCards);
             string action = AskOrGuess();
-            if (action == "ask")
+           if (action == "ask")
             {
-                Console.WriteLine("Not implemented");
-                //Ask(selected);
+                Ask(selected);
             }
             else if (action == "guess")
             {
@@ -54,7 +54,7 @@ namespace GuessZoo.service
 
         public string AskOrGuess()
         {
-            Console.WriteLine("Would you like to 'ask' a question, or 'guess' a card?");
+            Console.WriteLine("\nWould you like to 'ask' a question, or 'guess' a card? \n");
             string action = Console.ReadLine();
 
             return action;
@@ -65,31 +65,25 @@ namespace GuessZoo.service
         {
             Card guessCard = _guessCard.CaptureGuess();
             var guessResult = _cardComparer.CompareCards(selectedCard, guessCard);
-            _guessCard.Result = guessResult;
-            _displayOutcome.DisplayGuessOutcome(guessCard, selectedCard, guessResult);
+            _displayText.DisplayGuessOutcome(guessCard, selectedCard, guessResult);
         }
 
 
 
         public void Ask(Card selected)
         {
-            var resultList = _listFilter.RemainingCards;
-            
-            while (resultList.Count > 1)
-            {   
-                List<string> criteria = _askQuestion.CaptureCriteria();
-                foreach (var criterion in criteria)
-                {
-                    result = _cardComparer.CompareCriterion(criterion);
-                    _listFilter.FilterList(allCards, criteria, result);
-                }
-                _listFilter.DisplayRemainingCards();
-            }
-            if (resultList.Count == 1)
+            while (allCards.Count > 1)
             {
-                Card lastCard = resultList[0];
-                _displayOutcome.DisplayAskOutcome(lastCard);
+                _displayText.DisplayAllCards(allCards);
+                string criterion = _askQuestion.CaptureCriteria();
+                results = _cardComparer.CompareCriterion(criterion, selected, allCards);
+                _listFilter.FilterList(allCards, criterion, selected, results);
             }
+            if (allCards.Count == 1)
+            {
+                _displayText.DisplayAskOutcome(allCards);
+            }
+            
         }
 
     }

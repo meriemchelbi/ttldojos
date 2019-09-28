@@ -6,9 +6,12 @@ namespace GuessZoo.service
 {
     class AskQuestion
     {
-        public List<string> CaptureCriteria()
+        public string CaptureCriteria()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("\nEnter your guess. Is it a...?\n");
+            var criterion = Console.ReadLine();
+
+            return criterion;
         }
     }
 }

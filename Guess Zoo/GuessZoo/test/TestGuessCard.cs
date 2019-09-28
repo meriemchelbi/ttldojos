@@ -1,22 +1,19 @@
 using System;
 using Xunit;
 
-// TODO write tests & refactor CardComparer
-// TODO add AskQuestions and FilterList
-// TODO add load list from JSON
 
 namespace GuessZoo.test
 {
     public class TestGuessCard
     {
         [Fact]
-        public void CaptureGuessSetsCardProperties()
+        public void Test1()
         {
 
         }
 
         [Fact]
-        public void CompareCardsReturnsResult()
+        public void Test2()
         {
 
         }
