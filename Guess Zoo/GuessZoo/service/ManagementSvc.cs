@@ -9,12 +9,21 @@ namespace GuessZoo.service
         private readonly ListLoaderSvc _listLoaderSvc;
         private readonly GuessCard _guessCard;
         private readonly CardComparer _cardComparer;
+        private readonly AskQuestion _askQuestion;
+        private readonly ListFilter _listFilter;
+        private readonly DisplayOutcome _displayOutcome;
+        bool result;
+        List<Card> allCards;
+
 
         public ManagementSvc()
         {
             _listLoaderSvc = new ListLoaderSvc();
             _guessCard = new GuessCard();
             _cardComparer = new CardComparer();
+            _askQuestion = new AskQuestion();
+            _listFilter = new ListFilter();
+            _displayOutcome = new DisplayOutcome();
         }
 
         public void Run()
@@ -25,7 +34,8 @@ namespace GuessZoo.service
             string action = AskOrGuess();
             if (action == "ask")
             {
-                Console.WriteLine("This bit hasn't been implemented yet.");
+                Console.WriteLine("Not implemented");
+                //Ask(selected);
             }
             else if (action == "guess")
             {
@@ -34,6 +44,7 @@ namespace GuessZoo.service
 
         }
 
+        
         public Card PickRandomCard(List<Card> cards)
         {
             Random r = new Random();
@@ -53,12 +64,33 @@ namespace GuessZoo.service
         public void Guess(Card selectedCard)
         {
             Card guessCard = _guessCard.CaptureGuess();
-            var result = _cardComparer.CompareCards(selectedCard, guessCard);
-            _guessCard.Result = result;
-            _guessCard.DisplayGuessOutcome(guessCard, selectedCard);
-
+            var guessResult = _cardComparer.CompareCards(selectedCard, guessCard);
+            _guessCard.Result = guessResult;
+            _displayOutcome.DisplayGuessOutcome(guessCard, selectedCard, guessResult);
         }
 
-        
+
+
+        public void Ask(Card selected)
+        {
+            var resultList = _listFilter.RemainingCards;
+            
+            while (resultList.Count > 1)
+            {   
+                List<string> criteria = _askQuestion.CaptureCriteria();
+                foreach (var criterion in criteria)
+                {
+                    result = _cardComparer.CompareCriterion(criterion);
+                    _listFilter.FilterList(allCards, criteria, result);
+                }
+                _listFilter.DisplayRemainingCards();
+            }
+            if (resultList.Count == 1)
+            {
+                Card lastCard = resultList[0];
+                _displayOutcome.DisplayAskOutcome(lastCard);
+            }
+        }
+
     }
 }

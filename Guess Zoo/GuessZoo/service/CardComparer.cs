@@ -13,9 +13,16 @@ namespace GuessZoo.service
         public bool CompareCards(Card selectedCard, Card guessedCard)
         {
 
-            if(string.Equals(selectedCard.Adjective, guessedCard.Adjective) && string.Equals(selectedCard.Animal, guessedCard.Animal) && string.Equals(selectedCard.Color, guessedCard.Color))
+            if(string.Equals(selectedCard.Adjective, guessedCard.Adjective))
             {
-                Result = true;
+                if(string.Equals(selectedCard.Animal, guessedCard.Animal))
+                {
+                    if(string.Equals(selectedCard.Color, guessedCard.Color))
+                    {
+                        Result = true;
+                    }
+                }
+                                
             }
             else
             {
@@ -23,6 +30,11 @@ namespace GuessZoo.service
             }
 
             return Result;
+        }
+
+        public bool CompareCriterion(string criterion)
+        {
+            return true;
         }
     }
 }

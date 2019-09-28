@@ -1,7 +1,6 @@
 using System;
 using Xunit;
 
-// TODO break dependency between GuessCard & CardComparer
 // TODO write tests & refactor CardComparer
 // TODO add AskQuestions and FilterList
 // TODO add load list from JSON

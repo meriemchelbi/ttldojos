@@ -8,7 +8,6 @@ namespace GuessZoo.service
     public class GuessCard
     {
         public bool Result { get; set; }
-        string outcome;
         
         public Card CaptureGuess()
         {
@@ -26,20 +25,6 @@ namespace GuessZoo.service
             return guessedCard;
         }
 
-        public void DisplayGuessOutcome(Card guessedCard, Card selectedCard)
-        {
-            if (Result == true)
-            {
-                outcome = "win";
-            }
-            else
-            {
-                outcome = "lose";
-            }
-            Console.WriteLine($"You guessed: {guessedCard.Adjective}, {guessedCard.Animal}, {guessedCard.Color}.");
-            Console.WriteLine($"We selected: {selectedCard.Adjective}, {selectedCard.Animal}, {selectedCard.Color}.");
-            Console.WriteLine($"You {outcome}!");
-        }
 
 
     }
