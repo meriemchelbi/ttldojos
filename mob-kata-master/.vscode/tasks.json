@@ -1,0 +1,61 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/FizzBuzz.Test/FizzBuzz.Test.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/FizzBuzz.Test/FizzBuzz.Test.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "--project", "${workspaceFolder}/mob-kata.sln",
+                "test",
+                "${workspaceFolder}/FizzBuzz.Test/FizzBuzz.Test.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary",
+                "/property:CollectCoverage=true",
+                "/property:CoverletOutputFormat=lcov",
+                "/property:CoverletOutput=lcov.info"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "test",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "test",
+                "${workspaceFolder}/FizzBuzz.Test/FizzBuzz.Test.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary",
+                "/property:CollectCoverage=true",
+                "/property:CoverletOutputFormat=lcov",
+                "/property:CoverletOutput=lcov.info"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

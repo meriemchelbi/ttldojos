@@ -1,0 +1,1 @@
+Noticed you have an iterface for every class- what's the reason behind it? Is it because we want to make explicit which methods should be accessible publicly and which not?

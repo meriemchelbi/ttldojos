@@ -1,0 +1,50 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Guess Zoo\\GuessZoo Stu\\GuessZoo\\GuessZoo.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Guess Zoo\\GuessZoo Stu\\GuessZoo\\GuessZoo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Guess Zoo\\GuessZoo Stu\\GuessZoo\\GuessZoo.csproj",
+        "projectName": "GuessZoo",
+        "projectPath": "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Guess Zoo\\GuessZoo Stu\\GuessZoo\\GuessZoo.csproj",
+        "packagesPath": "C:\\Users\\meriemc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Guess Zoo\\GuessZoo Stu\\GuessZoo\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\meriemc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

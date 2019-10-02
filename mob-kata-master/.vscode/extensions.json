@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "hbenl.vscode-test-explorer",
+        "hbenl.vscode-test-explorer-liveshare",
+        "wghats.vscode-nxunit-test-adapter",
+        "ms-vscode.csharp",
+        "ms-vsliveshare.vsliveshare-pack",
+        "formulahendry.dotnet-test-explorer"
+    ]
+}

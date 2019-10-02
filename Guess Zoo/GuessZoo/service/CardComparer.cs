@@ -18,22 +18,18 @@ namespace GuessZoo.service
         // Full card comparison. All 3 properties must match for a positive.
         public bool CompareCards(Card selectedCard, Card guessedCard)
         {
-            bool guessResult = false;
+            return string.Equals(selectedCard.Adjective, guessedCard.Adjective) &&
+                   string.Equals(selectedCard.Animal,    guessedCard.Animal) &&
+                   string.Equals(selectedCard.Color,     guessedCard.Color);
 
-            if(string.Equals(selectedCard.Adjective, guessedCard.Adjective))
-            {
-                if(string.Equals(selectedCard.Animal, guessedCard.Animal))
-                {
-                    if(string.Equals(selectedCard.Color, guessedCard.Color))
-                    {
-                        guessResult = true;
-                    }
-                }
-                                
-            }
-            
+            //if (!string.Equals(selectedCard.Adjective, guessedCard.Adjective))
+            //    return false;
+            //if (!string.Equals(selectedCard.Animal, guessedCard.Animal))
+            //    return false;
+            //if (!string.Equals(selectedCard.Color, guessedCard.Color))
+            //    return false;
 
-            return guessResult;
+            //return true;
         }
 
         // Returns dict of match outcome against possible dimensions on selected card.

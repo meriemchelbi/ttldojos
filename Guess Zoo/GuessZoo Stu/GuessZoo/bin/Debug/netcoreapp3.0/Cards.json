@@ -1,0 +1,122 @@
+﻿[
+	{
+		"color": "brown",
+		"animal": "dog",
+		"adjective": "canine"
+	},
+	{
+		"color": "yellow",
+		"animal": "dog",
+		"adjective": "canine"
+	},
+	{
+		"color": "black",
+		"animal": "dog",
+		"adjective": "canine"
+	},
+	{
+		"color": "white",
+		"animal": "dog",
+		"adjective": "canine"
+	},
+	{
+		"color": "brown",
+		"animal": "jackal",
+		"adjective": "canine"
+	},
+	{
+		"color": "yellow",
+		"animal": "jackal",
+		"adjective": "canine"
+	},
+	{
+		"color": "black",
+		"animal": "jackal",
+		"adjective": "canine"
+	},
+	{
+		"color": "white",
+		"animal": "jackal",
+		"adjective": "canine"
+	},
+	{
+		"color": "brown",
+		"animal": "wolf",
+		"adjective": "canine"
+	},
+	{
+		"color": "yellow",
+		"animal": "wolf",
+		"adjective": "canine"
+	},
+	{
+		"color": "black",
+		"animal": "wolf",
+		"adjective": "canine"
+	},
+	{
+		"color": "white",
+		"animal": "wolf",
+		"adjective": "canine"
+	},
+	{
+		"color": "brown",
+		"animal": "cat",
+		"adjective": "feline"
+	},
+	{
+		"color": "yellow",
+		"animal": "cat",
+		"adjective": "feline"
+	},
+	{
+		"color": "black",
+		"animal": "cat",
+		"adjective": "feline"
+	},
+	{
+		"color": "white",
+		"animal": "cat",
+		"adjective": "feline"
+	},
+	{
+		"color": "brown",
+		"animal": "lynx",
+		"adjective": "feline"
+	},
+	{
+		"color": "yellow",
+		"animal": "lynx",
+		"adjective": "feline"
+	},
+	{
+		"color": "black",
+		"animal": "lynx",
+		"adjective": "feline"
+	},
+	{
+		"color": "white",
+		"animal": "lynx",
+		"adjective": "feline"
+	},
+	{
+		"color": "brown",
+		"animal": "lion",
+		"adjective": "feline"
+	},
+	{
+		"color": "yellow",
+		"animal": "lion",
+		"adjective": "feline"
+	},
+	{
+		"color": "black",
+		"animal": "lion",
+		"adjective": "feline"
+	},
+	{
+		"color": "white",
+		"animal": "lion",
+		"adjective": "feline"
+	}
+]
