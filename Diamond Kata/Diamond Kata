@@ -1,0 +1,54 @@
+# Diamond Kata
+
+This is a classic, that became [popularised in 2014 by Seb Rose][1].
+
+It's very simple in it's ask:
+
+> Given a letter, print a diamond starting with ‘A’ with the supplied letter at the widest point.
+> 
+> For example: `print-diamond C` prints
+>
+> ``` 
+>   A
+>  B B
+> C   C
+>  B B
+>   A
+> ```
+> As you move further along the alphabet, the larger the diamond gets.
+> 
+
+## Some points to consider
+
+There's many ways to solve this - but here's some things to consider before you start:
+
+1. Remember: **Red, Green, Refactor** - How long are you comfortable waiting between the cycles (i.e. "how long on a red light?").
+2. Do we need to test _all_ 26 letters of the alphabet? How many tests are needed to build confidence, while remaining agile?
+3. Could you decompose the problem into smaller parts and then compose a solution from those?
+
+## 💎 Bonus Rounds
+
+Got diamonds happily appearing in your terminal? Try doing these!
+
+1. **Ask for MOAR DIAMONDS!** If we do `print-diamonds C 2`, we get _two_ 'C'diamonds rendered side-by-side.
+2. **Print multiple diamonds of different sizes.** For example `print-diamonds C D A` renders _three_ differently-sized diamonds next to each other (vertically aligned in the middle for ease).
+3. **Make the diamonds pretty-printed.** Use characters `˄` (`U+02C4`), `/`, `\`, `˅` (`U+02C5`) to render the outer-edge, then put the letter of the diamond in the centre (if you get encoding issues, just replace the top/bottom with `^`, `v` respectively).
+
+> For example, `pretty-diamonds C A C B` would render:
+> ``` 
+>   ˄         ˄
+>  / \       / \    ˄
+> < C >  A  < C >  <B>
+>  \ /       \ /    ˅
+>   ˅         ˅
+> ```
+> _Diamonds C A C B pretty-printed._
+
+## 💎💎Mega-Ultra Crazy Bonus Round! 🤪
+
+**Make it rain!** Just for fun, constantly print diamonds of varying sizes, and have them render to the terminal - so it scrolls vertically. Keep in mind:
+   1. You will want to consider the terminal width so you can figure out how much space you have to play with.
+   2. The letter can be used to derive the max-width of a diamond, but you will also want some padding between them.
+   3. If you really want to go for it - can you fill the space in-between the diamond points? 🤔
+
+[1]:http://claysnow.co.uk/recycling-tests-in-tdd/
