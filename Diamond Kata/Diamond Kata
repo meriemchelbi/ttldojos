@@ -47,6 +47,7 @@ There's many ways to solve this - but here's some things to consider before you 
 Got diamonds happily appearing in your terminal? Try doing these!
 
 
+
 1. 
 **Ask for MOAR DIAMONDS!** 
 If we do `print-diamonds C 2`, we get _two_ 'C'diamonds rendered side-by-side.
@@ -58,21 +59,36 @@ For example `print-diamonds C D A` renders _three_ differently-sized diamonds ne
 3. **Make the diamonds pretty-printed.** 
 Use characters `˄` (`U+02C4`), `/`, `\`, `˅` (`U+02C5`) to render the outer-edge, then put the letter of the diamond in the centre (if you get encoding issues, just replace the top/bottom with `^`, `v` respectively).
 
+
 > For example, `pretty-diamonds C A C B` would render:
+
 > ``` 
+
 >   ˄         ˄
+
 >  / \       / \    ˄
+
 > < C >  A  < C >  <B>
+
 >  \ /       \ /    ˅
+
 >   ˅         ˅
+
 > ```
+
 > _Diamonds C A C B pretty-printed._
 
-## 💎💎Mega-Ultra Crazy Bonus Round! 🤪
 
-**Make it rain!** Just for fun, constantly print diamonds of varying sizes, and have them render to the terminal - so it scrolls vertically. Keep in mind:
-   1. You will want to consider the terminal width so you can figure out how much space you have to play with.
-   2. The letter can be used to derive the max-width of a diamond, but you will also want some padding between them.
-   3. If you really want to go for it - can you fill the space in-between the diamond points? 🤔
+# 💎💎Mega-Ultra Crazy Bonus Round! 🤪
+
+**Make it rain!** 
+Just for fun, constantly print diamonds of varying sizes, and have them render to the terminal - so it scrolls vertically. 
+Keep in mind:
+   
+1. You will want to consider the terminal width so you can figure out how much space you have to play with.
+   
+2. The letter can be used to derive the max-width of a diamond, but you will also want some padding between them.
+   
+3. If you really want to go for it - can you fill the space in-between the diamond points? 🤔
 
 [1]:http://claysnow.co.uk/recycling-tests-in-tdd/
