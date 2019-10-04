@@ -10,18 +10,25 @@ It's very simple in it's ask:
 > 
 > For example: `print-diamond C` prints
 >
+
 > ``` 
+
 >   A
+
 >  B B
+
 > C   C
+
 >  B B
+
 >   A
+
 > ```
 
 > As you move further along the alphabet, the larger the diamond gets.
-> 
 
-## Some points to consider
+
+# Some points to consider
 
 
 There's many ways to solve this - but here's some things to consider before you start:
@@ -33,14 +40,17 @@ There's many ways to solve this - but here's some things to consider before you 
 
 3. Could you decompose the problem into smaller parts and then compose a solution from those?
 
-## 
-💎 Bonus Rounds
+
+
+#💎 Bonus Rounds
 
 Got diamonds happily appearing in your terminal? Try doing these!
+
 
 1. 
 **Ask for MOAR DIAMONDS!** 
 If we do `print-diamonds C 2`, we get _two_ 'C'diamonds rendered side-by-side.
+
 2. 
 **Print multiple diamonds of different sizes.** 
 For example `print-diamonds C D A` renders _three_ differently-sized diamonds next to each other (vertically aligned in the middle for ease).
