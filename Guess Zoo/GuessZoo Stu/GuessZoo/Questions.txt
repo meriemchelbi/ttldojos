@@ -1,2 +1,3 @@
 Noticed you have an iterface for every class- what's the reason behind it? Is it because we want to make explicit which methods should be accessible publicly and which not?
 CardDescriptorComparisonRepository - why not declare _lookup as a dictionary, as opposed to defining it in relation to the IDictionary interface?
+Explain use of return; please? Would it not automatically do that without specifying?

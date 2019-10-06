@@ -6,7 +6,12 @@ namespace DiamondKata
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // declare & initialise instance of management service;
+            // declare & initialise instance of user interface service
+
+            // In while loop, call play on UI service, with management service instance as param
+
+           
         }
     }
 }

@@ -5,7 +5,7 @@ namespace DiamondKata.domain
 
     public class Matrix
     {
-        public char[,] DiamondMatrix { get; private set; }
+        public char[,] BlankMatrix { get; private set; }
         public int MatrixWidth { get; private set; }
 
         public Matrix(int inputIndex)
@@ -23,7 +23,7 @@ namespace DiamondKata.domain
         // generate blank matrix
         public void GenerateMatrix()
         {
-            DiamondMatrix = new char[MatrixWidth, MatrixWidth];
+            BlankMatrix = new char[MatrixWidth, MatrixWidth];
         }
 
 
