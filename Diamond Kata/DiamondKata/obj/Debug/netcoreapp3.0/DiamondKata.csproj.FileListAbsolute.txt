@@ -1,0 +1,16 @@
+C:\Users\Gordon\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\obj\Debug\netcoreapp3.0\DiamondKata.AssemblyInfoInputs.cache
+C:\Users\Gordon\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\obj\Debug\netcoreapp3.0\DiamondKata.AssemblyInfo.cs
+C:\Users\Gordon\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\bin\Debug\netcoreapp3.0\DiamondKata.exe
+C:\Users\Gordon\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\bin\Debug\netcoreapp3.0\DiamondKata.deps.json
+C:\Users\Gordon\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\bin\Debug\netcoreapp3.0\DiamondKata.runtimeconfig.json
+C:\Users\Gordon\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\bin\Debug\netcoreapp3.0\DiamondKata.runtimeconfig.dev.json
+C:\Users\Gordon\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\bin\Debug\netcoreapp3.0\DiamondKata.dll
+C:\Users\Gordon\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\bin\Debug\netcoreapp3.0\DiamondKata.pdb
+C:\Users\Gordon\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\bin\Debug\netcoreapp3.0\xunit.abstractions.dll
+C:\Users\Gordon\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\bin\Debug\netcoreapp3.0\xunit.assert.dll
+C:\Users\Gordon\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\bin\Debug\netcoreapp3.0\xunit.core.dll
+C:\Users\Gordon\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\bin\Debug\netcoreapp3.0\xunit.execution.dotnet.dll
+C:\Users\Gordon\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\obj\Debug\netcoreapp3.0\DiamondKata.csproj.CopyComplete
+C:\Users\Gordon\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\obj\Debug\netcoreapp3.0\DiamondKata.dll
+C:\Users\Gordon\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\obj\Debug\netcoreapp3.0\DiamondKata.pdb
+C:\Users\Gordon\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\obj\Debug\netcoreapp3.0\DiamondKata.csprojAssemblyReference.cache

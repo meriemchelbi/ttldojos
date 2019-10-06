@@ -19,3 +19,7 @@ Guess Zoo/GuessZoo Stu/GuessZoo/.vs/GuessZoo/DesignTimeBuild/.dtbcache
 *.testlog
 *.manifest
 *.sqlite
+*.sqlite
+*.cache
+*.cache
+*.cache
