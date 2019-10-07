@@ -1,4 +1,5 @@
 ﻿using System;
+using DiamondKata.service;
 
 namespace DiamondKata
 {
@@ -6,10 +7,13 @@ namespace DiamondKata
     {
         static void Main(string[] args)
         {
-            // declare & initialise instance of management service;
-            // declare & initialise instance of user interface service
+            var managementSvc = new ManagementSvc();
+            var userInterfaceSvc = new UserInterfaceSvc();
 
-            // In while loop, call play on UI service, with management service instance as param
+            while (true)
+            {
+                userInterfaceSvc.Play(managementSvc);
+            }
 
            
         }

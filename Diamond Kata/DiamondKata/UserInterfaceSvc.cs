@@ -1,22 +1,27 @@
-﻿namespace DiamondKata
+﻿using DiamondKata.service;
+using System;
+
+namespace DiamondKata
 {
     // interface here IUserInterfaceService
-    public class UserInterfaceService
+    public class UserInterfaceSvc
     {
-	    // declare private field for instance of management service
-        public void Play()
+        // declare private field for instance of management service
+        ManagementSvc managementSvc;
+        public void Play(ManagementSvc ManagementSvc)
         {
-            // takes instance of management service as parameter and assigns it to our management service field
-            // call method to capture input
-            // assign local variable matrix = call start on management service (returns matrix)
-            // call RenderInput passing matrix through as param.
+            managementSvc = ManagementSvc;
+            var letter = CaptureInput();
+            var matrix = managementSvc.Start(letter);
         }
-        public void CaptureInput()
+        public LetterLookupSvc CaptureInput()
 	    {
-            // ask for a letter
-            // instantiate a letterconvertorservice, passing through letter
-            // assigns instance of letterconvertorservice to management service field
-	    }
+            Console.WriteLine("Enter a letter > ");
+            var letter = Console.ReadLine();
+            var letterLookup = new LetterLookupSvc(letter);
+            return letterLookup;
+
+        }
 
         public void RenderInput()
         {

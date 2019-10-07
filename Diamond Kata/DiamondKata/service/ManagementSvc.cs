@@ -1,27 +1,36 @@
-﻿using System;
+﻿using DiamondKata.domain;
+using System;
 
 namespace DiamondKata.service
 {
     // interface?
-    public class ManagementService
+    public class ManagementSvc
     {
         // properties/fields (declare)
-        // instance of letter convertor service (provides us with letter & index in alphabet)
-        // instance of the _matrix class- private
-        // instance of matrix populator
+        LetterLookupSvc letterConvertorService; // provides us with letter & its index in alphabet
+        Matrix blankMatrix;
+        char[,] matrix;
+        MatrixPopulator matrixPopulator;
 
         // constructor?
 
-        // Start method (void) - 
-        // declare letter index (local) & initialise as _letterconvertor.letterindex
-        // instantiate _matrix
-        // get blank matrix & assign to public class variable
-        // Call MatrixPopulator with matrix instance as parameter
-        // return matrix
-     
-
-
         
+     
+        public char[,] Start(LetterLookupSvc letter)
+        {
+            letterConvertorService = letter;
+            var letterIndex = letterConvertorService.LetterIndex;
+            
+            // instantiate _matrix
+            // get blank matrix & assign to public class variable
+            // Call MatrixPopulator with matrix instance as parameter
+            
+            return matrix;
+
+        }
+
+
+
     }
 
 }
