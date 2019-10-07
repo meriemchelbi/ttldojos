@@ -10,7 +10,7 @@ namespace DKTests
         [Theory]
         [InlineData(2, 5)]
         [InlineData(9, 19)]
-        public void TestMatrixGeneratedWithCorrectDimensions(int letterIndex, int width)
+        public void TestMatrixDimensionsCalculation(int letterIndex, int width)
         {
             // arrange
             var matrix = new Matrix(letterIndex);
@@ -18,11 +18,26 @@ namespace DKTests
 
             // act
             matrix.ComputeMatrixSize(letterIndex);
+
+            // assert
+            Assert.Equal(width, matrix.MatrixWidth);
+
+        }
+
+        [Theory]
+        [InlineData(2, 5)]
+        [InlineData(9, 19)]
+        public void TestMatrixGeneratedWithCorrectDimensions(int letterIndex, int width)
+        {
+            // arrange
+            var matrix = new Matrix(letterIndex);
+
+            // act
+            matrix.ComputeMatrixSize(letterIndex);
             matrix.GenerateMatrix();
 
 
             // assert
-            Assert.Equal(width, matrix.MatrixWidth);
             // row width/dimension length
             Assert.Equal(width, matrix.BlankMatrix.GetLength(0));
             // column height/dimension length
