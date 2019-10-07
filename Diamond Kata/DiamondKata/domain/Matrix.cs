@@ -5,12 +5,13 @@ namespace DiamondKata.domain
 
     public class Matrix
     {
-        public char[,] BlankMatrix { get; private set; }
+        public string[,] BlankMatrix { get; private set; }
         public int MatrixWidth { get; private set; }
 
         public Matrix(int inputIndex)
         {
             ComputeMatrixSize(inputIndex);
+            GenerateMatrix();
         }
 
         // compute matrix size
@@ -23,7 +24,7 @@ namespace DiamondKata.domain
         // generate blank matrix
         public void GenerateMatrix()
         {
-            BlankMatrix = new char[MatrixWidth, MatrixWidth];
+            BlankMatrix = new string[MatrixWidth, MatrixWidth];
         }
 
 

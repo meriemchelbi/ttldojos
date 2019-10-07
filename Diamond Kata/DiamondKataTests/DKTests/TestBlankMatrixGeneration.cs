@@ -14,7 +14,6 @@ namespace DKTests
         {
             // arrange
             var matrix = new Matrix(letterIndex);
-            // char[,] expectedMatrix = new char[width, width];
 
             // act
             matrix.ComputeMatrixSize(letterIndex);

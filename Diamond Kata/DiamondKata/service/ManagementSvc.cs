@@ -7,23 +7,27 @@ namespace DiamondKata.service
     public class ManagementSvc
     {
         // properties/fields (declare)
-        LetterLookupSvc letterConvertorService; // provides us with letter & its index in alphabet
+        LetterLookupSvc letterLookup; // provides us with letter & its index in alphabet
         Matrix blankMatrix;
-        char[,] matrix;
+        string[,] matrix;
         MatrixPopulator matrixPopulator;
 
         // constructor?
 
-        
-     
-        public char[,] Start(LetterLookupSvc letter)
+        public ManagementSvc()
         {
-            letterConvertorService = letter;
-            var letterIndex = letterConvertorService.LetterIndex;
-            
-            // instantiate _matrix
-            // get blank matrix & assign to public class variable
-            // Call MatrixPopulator with matrix instance as parameter
+            matrixPopulator = new MatrixPopulator();
+
+        }
+               
+     
+        public string[,] Start(LetterLookupSvc letter)
+        {
+            letterLookup = letter;
+            var letterIndex = letterLookup.LetterIndex;
+            blankMatrix = new Matrix(letterIndex);
+            matrix = blankMatrix.BlankMatrix;
+            matrixPopulator.PopulateMatrix(matrix);
             
             return matrix;
 

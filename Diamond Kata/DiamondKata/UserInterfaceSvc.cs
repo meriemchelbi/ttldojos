@@ -11,22 +11,35 @@ namespace DiamondKata
         public void Play(ManagementSvc ManagementSvc)
         {
             managementSvc = ManagementSvc;
-            var letter = CaptureInput();
+            var letter = CaptureLetter();
             var matrix = managementSvc.Start(letter);
+            RenderInput(matrix);
         }
-        public LetterLookupSvc CaptureInput()
+        public LetterLookupSvc CaptureLetter()
 	    {
-            Console.WriteLine("Enter a letter > ");
-            var letter = Console.ReadLine();
+            var letter = RequestInput();
             var letterLookup = new LetterLookupSvc(letter);
             return letterLookup;
 
         }
 
-        public void RenderInput()
+        private string RequestInput()
         {
-            // take matrix as param
+            Console.WriteLine("Enter a letter > ");
+            var letter = Console.ReadLine();
+            return letter;
+        }
+
+        public void RenderInput(string[,] matrix)
+        {
             // for each row in the matrix, render row & carriage return
+            for (var i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    Console.WriteLine(matrix[i, j]);
+                }
+            }
         }
 
     }
