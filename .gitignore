@@ -24,3 +24,7 @@ Guess Zoo/GuessZoo Stu/GuessZoo/.vs/GuessZoo/DesignTimeBuild/.dtbcache
 *.cache
 *.cache
 *.sqlite
+*.dll
+*.dll
+*.pdb
+*.pdb
