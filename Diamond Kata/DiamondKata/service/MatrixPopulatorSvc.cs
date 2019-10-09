@@ -16,7 +16,14 @@ namespace DiamondKata.service
                     matrix[j, i] = "wahey";
                 }
             }
+
         }
+
+        public void ComputeXIndex()
+        {
+
+        }
+
     }
 
 

@@ -7,7 +7,7 @@ namespace DiamondKata
     {
         static void Main(string[] args)
         {
-            var managementSvc = new ManagementSvc();
+            var managementSvc = new OrchestrationSvc();
             var userInterfaceSvc = new UserInterfaceSvc();
 
             while (true)

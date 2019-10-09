@@ -3,14 +3,14 @@ using DiamondKata.service;
 
 namespace DKTests
 {
-    public class TestManagementSvc
+    public class TestOrchestrationSvc
     {
         [Fact]
         public void TestStartGeneratesCompletedMatrix()
         {
             // arrange
             var letterLookup = new LetterLookupSvc("B");
-            var managementSvc = new ManagementSvc();
+            var managementSvc = new OrchestrationSvc();
 
             // act
             var result = managementSvc.Start(letterLookup);

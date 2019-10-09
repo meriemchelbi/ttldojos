@@ -6,9 +6,8 @@ namespace DiamondKata
     // interface here IUserInterfaceService
     public class UserInterfaceSvc
     {
-        // declare private field for instance of management service
-        ManagementSvc managementSvc;
-        public void Play(ManagementSvc ManagementSvc)
+        OrchestrationSvc managementSvc;
+        public void Play(OrchestrationSvc ManagementSvc)
         {
             managementSvc = ManagementSvc;
             var letter = CaptureLetter();
@@ -32,12 +31,11 @@ namespace DiamondKata
 
         public void RenderInput(string[,] matrix)
         {
-            // for each row in the matrix, render row & carriage return
             for (var i = 0; i < matrix.GetLength(0); i++)
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    Console.WriteLine(matrix[i, j]);
+                    Console.WriteLine($"{matrix[i, j]} {i}, {j}");
                 }
             }
         }

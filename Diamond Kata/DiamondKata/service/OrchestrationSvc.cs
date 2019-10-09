@@ -4,17 +4,16 @@ using System;
 namespace DiamondKata.service
 {
     // interface?
-    public class ManagementSvc
+    public class OrchestrationSvc
     {
-        // properties/fields (declare)
-        LetterLookupSvc letterLookup; // provides us with letter & its index in alphabet
+        LetterLookupSvc letterLookup; 
         Matrix blankMatrix;
         string[,] matrix;
         MatrixPopulator matrixPopulator;
 
         // constructor?
 
-        public ManagementSvc()
+        public OrchestrationSvc()
         {
             matrixPopulator = new MatrixPopulator();
 
