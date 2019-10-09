@@ -12,14 +12,17 @@ namespace DKTests
         [InlineData("O", 14)]
         [InlineData("T", 19)]
         [InlineData("Z", 25)]
-        public void TestLetterIndexLookup(string letter, int expectedIndex)
+        public void TestLetterIndexLookup(string chosenLetter, int expectedChosenLetterIndex)
         {
             // arrange & act
-            LetterLookupSvc indexLookup = new LetterLookupSvc(letter);
+            LetterLookupSvc lookup = new LetterLookupSvc(chosenLetter);
+            var expectedMatrixLettersLength = expectedChosenLetterIndex + 1;
 
             // assert
-            Assert.Equal(letter, indexLookup.Letter);
-            Assert.Equal(expectedIndex, indexLookup.LetterIndex);
+            Assert.Equal(chosenLetter, lookup.ChosenLetter);
+            Assert.Equal(expectedChosenLetterIndex, lookup.ChosenLetterAlphabetIndex);
+            Assert.Equal(expectedMatrixLettersLength, lookup.MatrixLetters.Length);
+            
         }
 
     }

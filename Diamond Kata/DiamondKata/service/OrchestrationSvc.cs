@@ -16,17 +16,16 @@ namespace DiamondKata.service
         public OrchestrationSvc()
         {
             matrixPopulator = new MatrixPopulator();
-
         }
                
      
         public string[,] Start(LetterLookupSvc letter)
         {
             letterLookup = letter;
-            var letterIndex = letterLookup.LetterIndex;
+            var letterIndex = letterLookup.ChosenLetterAlphabetIndex;
             blankMatrix = new Matrix(letterIndex);
             matrix = blankMatrix.BlankMatrix;
-            matrixPopulator.PopulateMatrix(matrix);
+            matrixPopulator.PopulateMatrix(matrix, letter);
             
             return matrix;
 

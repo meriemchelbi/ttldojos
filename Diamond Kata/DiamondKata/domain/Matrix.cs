@@ -26,8 +26,7 @@ namespace DiamondKata.domain
         {
             BlankMatrix = new string[MatrixWidth, MatrixWidth];
         }
-
-
+                    
     }
 
 }

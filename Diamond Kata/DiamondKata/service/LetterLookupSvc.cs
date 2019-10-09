@@ -11,19 +11,33 @@ namespace DiamondKata.service
     {
        
         // Property: Selected letter, get & set
-        public string Letter { get; private set; }
-        public int LetterIndex { get; private set; }
+        public string ChosenLetter { get; private set; }
+        public int ChosenLetterAlphabetIndex { get; private set; }
+        private readonly Letters alphabet = new Letters();
 
-        public LetterLookupSvc(string letter)
+
+        // can this be a list? Implement via interface?
+        public string[] MatrixLetters { get; private set; }
+
+        public LetterLookupSvc(string chosenLetter)
         {
-            Letter = letter;
-            LookUpLetterIndex(letter);
+            ChosenLetter = chosenLetter;
+            LookUpChosenLetterIndex(chosenLetter);
+            SetMatrixLetters();
         }
 
-        private void LookUpLetterIndex(string letter)
+        private void LookUpChosenLetterIndex(string chosenLetter)
         {
-            var alphabet = new Letters();
-            LetterIndex = Array.IndexOf(alphabet.Alphabet, letter);
+            ChosenLetterAlphabetIndex = Array.IndexOf(alphabet.Alphabet, chosenLetter);
+        }
+
+        private void SetMatrixLetters()
+        {
+            MatrixLetters = new string[ChosenLetterAlphabetIndex + 1];
+            for (int i = 0; i < (ChosenLetterAlphabetIndex + 1); i++)
+            {
+                MatrixLetters[i] = alphabet.Alphabet[i];
+            }
         }
 
     }

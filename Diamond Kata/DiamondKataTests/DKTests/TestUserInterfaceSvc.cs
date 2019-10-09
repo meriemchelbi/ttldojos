@@ -6,14 +6,14 @@ namespace DKTests
 {
     public class TestUserInterfaceSvc
     {
-        [Theory]
-        [InlineData("A")]
-        public void TestCaptureInput(string inputLetter)
-        {
+        //[Theory]
+        //[InlineData("A")]
+        //public void TestCaptureInput(string inputLetter)
+        //{
          
 
 
-        }
+        //}
 
 
     }
