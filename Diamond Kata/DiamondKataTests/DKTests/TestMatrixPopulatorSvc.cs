@@ -15,7 +15,7 @@ namespace DKTests
         [InlineData("Z", "A", 25, 25, 0)]
         [InlineData("Z", "A", 25, 25, 50)]
 
-        public void TestPopulatetopHalf(string chosenLetter, string assertLetter, int horizontalIndexLeft, int horizontalIndexRight, int verticalIndex)
+        public void TestPopulateMatrix(string chosenLetter, string assertLetter, int horizontalIndexLeft, int horizontalIndexRight, int verticalIndex)
         {
             // arrange
             var lookup = new LetterLookupSvc(chosenLetter);
@@ -24,7 +24,7 @@ namespace DKTests
             var matrixPopulator = new MatrixPopulator();
 
             // act
-            matrixPopulator.PopulateTopHalf(matrix, lookup);
+            matrixPopulator.PopulateLetters(matrix, lookup);
             
               
             // assert

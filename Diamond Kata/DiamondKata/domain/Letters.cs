@@ -4,7 +4,6 @@ namespace DiamondKata.domain
 {
     class Letters
     {
-        // TODO work out how/whether to implement this with collection
         public string[] Alphabet = new string[] 
         {
             "A", 

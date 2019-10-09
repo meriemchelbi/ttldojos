@@ -7,12 +7,12 @@ namespace DiamondKata
     {
         static void Main(string[] args)
         {
-            var managementSvc = new OrchestrationSvc();
+            var orchestrationSvc = new OrchestrationSvc();
             var userInterfaceSvc = new UserInterfaceSvc();
 
             while (true)
             {
-                userInterfaceSvc.Play(managementSvc);
+                userInterfaceSvc.Play(orchestrationSvc);
             }
 
            

@@ -10,13 +10,11 @@ namespace DiamondKata.service
     public class LetterLookupSvc
     {
        
-        // Property: Selected letter, get & set
         public string ChosenLetter { get; private set; }
         public int ChosenLetterAlphabetIndex { get; private set; }
         private readonly Letters alphabet = new Letters();
 
 
-        // can this be a list? Implement via interface?
         public string[] MatrixLetters { get; private set; }
 
         public LetterLookupSvc(string chosenLetter)

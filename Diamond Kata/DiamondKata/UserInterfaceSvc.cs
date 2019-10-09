@@ -6,12 +6,12 @@ namespace DiamondKata
     // interface here IUserInterfaceService
     public class UserInterfaceSvc
     {
-        OrchestrationSvc managementSvc;
-        public void Play(OrchestrationSvc ManagementSvc)
+        OrchestrationSvc orchestrationSvc;
+        public void Play(OrchestrationSvc OrchestrationSvc)
         {
-            managementSvc = ManagementSvc;
+            orchestrationSvc = OrchestrationSvc;
             var letter = CaptureLetter();
-            var matrix = managementSvc.Start(letter);
+            var matrix = orchestrationSvc.Start(letter);
             RenderInput(matrix);
         }
         public LetterLookupSvc CaptureLetter()
@@ -35,9 +35,13 @@ namespace DiamondKata
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    Console.WriteLine($"{matrix[i, j]} {i}, {j}");
+                    Console.Write($"{matrix[i, j]}");
                 }
+                
+                Console.WriteLine(Environment.NewLine);
+
             }
+            
         }
 
     }

@@ -10,10 +10,10 @@ namespace DKTests
         {
             // arrange
             var letterLookup = new LetterLookupSvc("B");
-            var managementSvc = new OrchestrationSvc();
+            var OrchestrationSvc = new OrchestrationSvc();
 
             // act
-            var result = managementSvc.Start(letterLookup);
+            var result = OrchestrationSvc.Start(letterLookup);
 
             // assert
             Assert.Equal(9, result.Length);

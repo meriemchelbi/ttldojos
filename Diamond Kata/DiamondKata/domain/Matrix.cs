@@ -1,4 +1,6 @@
-﻿  using System.Collections.Generic;
+﻿using System.Collections.Generic;
+
+// TODO: look up domain modelling patterns
 
 namespace DiamondKata.domain
 {

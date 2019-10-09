@@ -9,7 +9,7 @@ namespace DiamondKata.service
         public void PopulateMatrix(string[,] matrix, LetterLookupSvc letter)
         {
             PopulateBlanks(matrix);
-            PopulateTopHalf(matrix, letter);
+            PopulateLetters(matrix, letter);
         }
 
         private void PopulateBlanks(string[,] matrix)
@@ -18,12 +18,12 @@ namespace DiamondKata.service
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    matrix[i, j] = "";
+                    matrix[i, j] = "  ";
                 }
             }
         }
 
-        public void PopulateTopHalf(string[,] matrix, LetterLookupSvc letter)
+        public void PopulateLetters(string[,] matrix, LetterLookupSvc letter)
         {
             var horizontalIndex = (int)(matrix.GetLength(0) / 2);
             var verticalIndex = 0;
