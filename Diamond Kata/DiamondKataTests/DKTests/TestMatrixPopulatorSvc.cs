@@ -13,21 +13,21 @@ namespace DKTests
         [InlineData("D", "B", 2, 4, 1)]
         [InlineData("Z", "A", 25, 25, 0)]
 
-        public void TestPopulatetopHalf(string chosenLetter, string assertLetter, int expectedHorizontalIndexLeft, int expectedHorizontalIndexRight, int expectedVerticalIndex)
+        public void TestPopulatetopHalf(string chosenLetter, string assertLetter, int horizontalIndexLeft, int horizontalIndexRight, int verticalIndex)
         {
             // arrange
             var lookup = new LetterLookupSvc(chosenLetter);
             var matrixObject = new Matrix(lookup.ChosenLetterAlphabetIndex);
-            var blankMatrix = matrixObject.BlankMatrix;
+            var matrix = matrixObject.BlankMatrix;
             var matrixPopulator = new MatrixPopulator();
 
             // act
-            var populatedMatrix = matrixPopulator.PopulateTopHalf(blankMatrix, lookup);
+            matrixPopulator.PopulateTopHalf(matrix, lookup);
             
               
             // assert
-            Assert.Equal(assertLetter, blankMatrix[expectedVerticalIndex, expectedHorizontalIndexLeft]);
-            Assert.Equal(assertLetter, blankMatrix[expectedVerticalIndex, expectedHorizontalIndexRight]);
+            Assert.Equal(assertLetter, matrix[verticalIndex, horizontalIndexLeft]);
+            Assert.Equal(assertLetter, matrix[verticalIndex, horizontalIndexRight]);
         }
     }
 }
