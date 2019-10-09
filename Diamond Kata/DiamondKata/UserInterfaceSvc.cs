@@ -25,7 +25,7 @@ namespace DiamondKata
         private string RequestInput()
         {
             Console.WriteLine("Enter a letter > ");
-            var letter = Console.ReadLine();
+            var letter = Console.ReadLine().ToUpper();
             return letter;
         }
 

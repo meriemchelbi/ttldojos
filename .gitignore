@@ -30,3 +30,6 @@ Guess Zoo/GuessZoo Stu/GuessZoo/.vs/GuessZoo/DesignTimeBuild/.dtbcache
 *.pdb
 *.dll
 *.pdb
+*.pdb
+*.dll
+*.sqlite
