@@ -11,7 +11,9 @@ namespace DKTests
         [Theory]
         [InlineData("B", "A", 1, 1, 0)]
         [InlineData("D", "B", 2, 4, 1)]
+        [InlineData("D", "B", 2, 4, 5)]
         [InlineData("Z", "A", 25, 25, 0)]
+        [InlineData("Z", "A", 25, 25, 50)]
 
         public void TestPopulatetopHalf(string chosenLetter, string assertLetter, int horizontalIndexLeft, int horizontalIndexRight, int verticalIndex)
         {
