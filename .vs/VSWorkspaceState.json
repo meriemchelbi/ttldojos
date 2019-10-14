@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Diamond Kata"
+    "\\Diamond Kata",
+    "\\Diamond Kata\\DiamondKata",
+    "\\Diamond Kata\\DiamondKata\\domain",
+    "\\Diamond Kata\\DiamondKata\\service"
   ],
-  "SelectedNode": "\\ttldojos.sln",
+  "SelectedNode": "\\Diamond Kata\\DiamondKata\\DiamondKata.sln",
   "PreviewInSolutionExplorer": false
 }

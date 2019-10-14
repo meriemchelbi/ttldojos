@@ -1,37 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gordon\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKataTests\\DKTests\\DKTests.csproj": {}
+    "C:\\Users\\Meriem\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKataTests\\DKTests\\DKTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gordon\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKataTests\\DKTests\\DKTests.csproj": {
+    "C:\\Users\\Meriem\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKataTests\\DKTests\\DKTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gordon\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKataTests\\DKTests\\DKTests.csproj",
+        "projectUniqueName": "C:\\Users\\Meriem\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKataTests\\DKTests\\DKTests.csproj",
         "projectName": "DKTests",
-        "projectPath": "C:\\Users\\Gordon\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKataTests\\DKTests\\DKTests.csproj",
-        "packagesPath": "C:\\Users\\Gordon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gordon\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKataTests\\DKTests\\obj\\",
+        "projectPath": "C:\\Users\\Meriem\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKataTests\\DKTests\\DKTests.csproj",
+        "packagesPath": "C:\\Users\\Meriem\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Meriem\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKataTests\\DKTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Gordon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Meriem\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.0"
+          "netcoreapp2.2"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.0": {
+          "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\Gordon\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKata\\DiamondKata.csproj": {
-                "projectPath": "C:\\Users\\Gordon\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKata\\DiamondKata.csproj"
+              "C:\\Users\\Meriem\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKata\\DiamondKata.csproj": {
+                "projectPath": "C:\\Users\\Meriem\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKata\\DiamondKata.csproj"
               }
             }
           }
@@ -43,69 +43,68 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.0": {
+        "netcoreapp2.2": {
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.2.0, )"
+              "version": "[16.3.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
             },
             "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[1.0.1, )"
+              "version": "[1.1.0, )"
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.4.0, )"
+              "version": "[2.4.1, )"
             },
             "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[2.4.0, )"
+              "version": "[2.4.1, )"
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     },
-    "C:\\Users\\Gordon\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKata\\DiamondKata.csproj": {
+    "C:\\Users\\Meriem\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKata\\DiamondKata.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gordon\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKata\\DiamondKata.csproj",
+        "projectUniqueName": "C:\\Users\\Meriem\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKata\\DiamondKata.csproj",
         "projectName": "DiamondKata",
-        "projectPath": "C:\\Users\\Gordon\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKata\\DiamondKata.csproj",
-        "packagesPath": "C:\\Users\\Gordon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gordon\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKata\\obj\\",
+        "projectPath": "C:\\Users\\Meriem\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKata\\DiamondKata.csproj",
+        "packagesPath": "C:\\Users\\Meriem\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Meriem\\OneDrive - Trainline Ltd\\Programming 101\\Dojos\\ttldojos\\Diamond Kata\\DiamondKata\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Gordon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Meriem\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.0"
+          "netcoreapp2.2"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.0": {
+          "netcoreapp2.2": {
             "projectReferences": {}
           }
         },
@@ -116,29 +115,24 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.0": {
+        "netcoreapp2.2": {
           "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
             "xunit": {
               "target": "Package",
-              "version": "[2.4.0, )"
+              "version": "[2.4.1, )"
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     }
