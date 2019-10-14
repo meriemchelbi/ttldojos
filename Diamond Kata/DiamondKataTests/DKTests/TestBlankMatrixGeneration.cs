@@ -12,13 +12,8 @@ namespace DKTests
         [InlineData(9, 19)]
         public void TestMatrixDimensionsCalculation(int letterIndex, int width)
         {
-            // arrange
-            var matrix = new Matrix(letterIndex);
+            var matrix = new DiamondMatrix(letterIndex);
 
-            // act
-            matrix.ComputeMatrixSize(letterIndex);
-
-            // assert
             Assert.Equal(width, matrix.MatrixWidth);
 
         }
@@ -28,19 +23,12 @@ namespace DKTests
         [InlineData(9, 19)]
         public void TestMatrixGeneratedWithCorrectDimensions(int letterIndex, int width)
         {
-            // arrange
-            var matrix = new Matrix(letterIndex);
+            var matrix = new DiamondMatrix(letterIndex);
 
-            // act
-            matrix.ComputeMatrixSize(letterIndex);
-            matrix.GenerateMatrix();
-
-
-            // assert
             // row width/dimension length
-            Assert.Equal(width, matrix.BlankMatrix.GetLength(0));
+            Assert.Equal(width, matrix.Matrix.GetLength(0));
             // column height/dimension length
-            Assert.Equal(width, matrix.BlankMatrix.GetLength(1));
+            Assert.Equal(width, matrix.Matrix.GetLength(1));
 
         }
 

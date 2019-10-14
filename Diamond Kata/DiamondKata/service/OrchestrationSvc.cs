@@ -3,27 +3,27 @@ using System;
 
 namespace DiamondKata.service
 {
-    // interface?
-    public class OrchestrationSvc
+    public interface IOrchestrationSvc
     {
-        LetterLookupSvc letterLookup; 
-        Matrix blankMatrix;
-        string[,] matrix;
-        MatrixPopulator matrixPopulator;
+        string[,] Start(ILetterLookupSvc letter);
+    }
+    public class OrchestrationSvc: IOrchestrationSvc
+    {
+        private readonly MatrixPopulator _matrixPopulator;
 
         public OrchestrationSvc()
         {
-            matrixPopulator = new MatrixPopulator();
+            _matrixPopulator = new MatrixPopulator();
         }
                
      
-        public string[,] Start(LetterLookupSvc letter)
+        public string[,] Start(ILetterLookupSvc letter)
         {
-            letterLookup = letter;
+            var letterLookup = letter;
             var letterIndex = letterLookup.ChosenLetterAlphabetIndex;
-            blankMatrix = new Matrix(letterIndex);
-            matrix = blankMatrix.BlankMatrix;
-            matrixPopulator.PopulateMatrix(matrix, letter);
+            var blankMatrix = new DiamondMatrix(letterIndex);
+            var matrix = blankMatrix.Matrix;
+            _matrixPopulator.PopulateMatrix(matrix, letter);
             
             return matrix;
 

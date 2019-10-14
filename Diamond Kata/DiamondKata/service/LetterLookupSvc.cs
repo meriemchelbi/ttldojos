@@ -5,35 +5,44 @@ using System.Text;
 
 namespace DiamondKata.service
 {
-    public class LetterLookupSvc
+    public interface ILetterLookupSvc
     {
-       
-        public string ChosenLetter { get; private set; }
-        public int ChosenLetterAlphabetIndex { get; private set; }
-        private readonly Letters alphabet = new Letters();
+        string ChosenLetter { get; }
+        int ChosenLetterAlphabetIndex { get; }
+        string[] MatrixLetters { get; }
+    }
+    public class LetterLookupSvc: ILetterLookupSvc
+    {
 
-
-        public string[] MatrixLetters { get; private set; }
+        public string ChosenLetter { get; }
+        public int ChosenLetterAlphabetIndex { get; }
+        private readonly Letters _alphabet = new Letters();
+        public string[] MatrixLetters { get; }
 
         public LetterLookupSvc(string chosenLetter)
         {
             ChosenLetter = chosenLetter;
-            LookUpChosenLetterIndex(chosenLetter);
-            SetMatrixLetters();
+            ChosenLetterAlphabetIndex = LookUpChosenLetterIndex(chosenLetter);
+            MatrixLetters = SetMatrixLetters();
         }
 
-        private void LookUpChosenLetterIndex(string chosenLetter)
+        private int LookUpChosenLetterIndex(string chosenLetter)
         {
-            ChosenLetterAlphabetIndex = Array.IndexOf(alphabet.Alphabet, chosenLetter);
+            var chosenLetterAlphabetIndex = Array.IndexOf(_alphabet.Alphabet, chosenLetter);
+
+            return chosenLetterAlphabetIndex;
         }
 
-        private void SetMatrixLetters()
+        private string[] SetMatrixLetters()
         {
-            MatrixLetters = new string[ChosenLetterAlphabetIndex + 1];
+            var matrixLetters = new string[ChosenLetterAlphabetIndex + 1];
             for (int i = 0; i < (ChosenLetterAlphabetIndex + 1); i++)
             {
-                MatrixLetters[i] = alphabet.Alphabet[i];
+                matrixLetters[i] = _alphabet.Alphabet[i];
+
             }
+            return matrixLetters;
+
         }
 
     }

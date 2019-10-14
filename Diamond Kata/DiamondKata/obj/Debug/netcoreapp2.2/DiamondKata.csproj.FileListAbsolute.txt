@@ -1,0 +1,11 @@
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\bin\Debug\netcoreapp2.2\DiamondKata.deps.json
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\bin\Debug\netcoreapp2.2\DiamondKata.runtimeconfig.json
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\bin\Debug\netcoreapp2.2\DiamondKata.runtimeconfig.dev.json
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\bin\Debug\netcoreapp2.2\DiamondKata.dll
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\bin\Debug\netcoreapp2.2\DiamondKata.pdb
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\obj\Debug\netcoreapp2.2\DiamondKata.csprojAssemblyReference.cache
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\obj\Debug\netcoreapp2.2\DiamondKata.csproj.CoreCompileInputs.cache
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\obj\Debug\netcoreapp2.2\DiamondKata.AssemblyInfoInputs.cache
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\obj\Debug\netcoreapp2.2\DiamondKata.AssemblyInfo.cs
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\obj\Debug\netcoreapp2.2\DiamondKata.dll
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\Diamond Kata\DiamondKata\obj\Debug\netcoreapp2.2\DiamondKata.pdb

@@ -19,12 +19,12 @@ namespace DKTests
         {
             // arrange
             var lookup = new LetterLookupSvc(chosenLetter);
-            var matrixObject = new Matrix(lookup.ChosenLetterAlphabetIndex);
-            var matrix = matrixObject.BlankMatrix;
+            var matrixObject = new DiamondMatrix(lookup.ChosenLetterAlphabetIndex);
+            var matrix = matrixObject.Matrix;
             var matrixPopulator = new MatrixPopulator();
 
             // act
-            matrixPopulator.PopulateLetters(matrix, lookup);
+            matrixPopulator.PopulateMatrix(matrix, lookup);
             
               
             // assert

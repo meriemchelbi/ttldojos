@@ -3,10 +3,15 @@
 namespace DiamondKata.service
 {
 
-    public class MatrixPopulator
+    public interface IMatrixPopulator
+    {
+        void PopulateMatrix(string[,] matrix, ILetterLookupSvc letter);
+    }
+
+    public class MatrixPopulator: IMatrixPopulator
     {
 
-        public void PopulateMatrix(string[,] matrix, LetterLookupSvc letter)
+        public void PopulateMatrix(string[,] matrix, ILetterLookupSvc letter)
         {
             PopulateBlanks(matrix);
             PopulateLetters(matrix, letter);
@@ -23,11 +28,13 @@ namespace DiamondKata.service
             }
         }
 
-        public void PopulateLetters(string[,] matrix, LetterLookupSvc letter)
+        private void PopulateLetters(string[,] matrix, ILetterLookupSvc letter)
         {
             var horizontalIndex = (int)(matrix.GetLength(0) / 2);
+
             var verticalIndex = 0;
             matrix[verticalIndex, horizontalIndex] = "A";
+
             var verticalIndexBottom = (matrix.GetLength(1) - 1);
             matrix[verticalIndexBottom, horizontalIndex] = "A";
 
@@ -35,7 +42,7 @@ namespace DiamondKata.service
 
             for (int i = 1; i < letter.MatrixLetters.Length; i++)
             {
-                verticalIndex++;
+                verticalIndex += 1;
                 var selectedLetter = letters[i];
                 matrix[verticalIndex, (horizontalIndex - i)] = selectedLetter;
                 matrix[verticalIndex, (horizontalIndex + i)] = selectedLetter;

@@ -2,29 +2,34 @@
 
 namespace DiamondKata.domain
 {
-
-    public class Matrix
+    public interface IMatrix
     {
-        public string[,] BlankMatrix { get; private set; }
-        public int MatrixWidth { get; private set; }
+        string[,] Matrix { get; }
+        int MatrixWidth { get; }
+    }
 
-        public Matrix(int inputIndex)
+    public class DiamondMatrix: IMatrix
+    {
+        public string[,] Matrix { get; }
+        public int MatrixWidth { get; }
+
+        public DiamondMatrix(int inputIndex)
         {
-            ComputeMatrixSize(inputIndex);
-            GenerateMatrix();
+            MatrixWidth = ComputeMatrixSize(inputIndex);
+            Matrix = GenerateMatrix();
         }
 
-        // compute matrix size
-        public void ComputeMatrixSize(int inputIndex)
+        private int ComputeMatrixSize(int inputIndex)
         {
-            MatrixWidth = (inputIndex * 2) + 1;
+            var matrixWidth = (inputIndex * 2) + 1;
+            return matrixWidth;
       
         }
 
-        // generate blank matrix
-        public void GenerateMatrix()
+        private string[,] GenerateMatrix()
         {
-            BlankMatrix = new string[MatrixWidth, MatrixWidth];
+            var blankMatrix = new string[MatrixWidth, MatrixWidth];
+            return blankMatrix;
         }
                     
     }

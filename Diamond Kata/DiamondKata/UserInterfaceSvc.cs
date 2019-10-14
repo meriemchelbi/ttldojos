@@ -3,13 +3,15 @@ using System;
 
 namespace DiamondKata
 {
-    // interface here IUserInterfaceService
-    public class UserInterfaceSvc
+    public interface IUserInterfaceSvc
     {
-        OrchestrationSvc orchestrationSvc;
-        public void Play(OrchestrationSvc OrchestrationSvc)
+        void Play(IOrchestrationSvc OrchestrationSvc);
+    }
+    public class UserInterfaceSvc: IUserInterfaceSvc
+    {
+        public void Play(IOrchestrationSvc OrchestrationSvc)
         {
-            orchestrationSvc = OrchestrationSvc;
+            var orchestrationSvc = OrchestrationSvc;
             var letter = CaptureLetter();
             var matrix = orchestrationSvc.Start(letter);
             RenderInput(matrix);
@@ -29,7 +31,7 @@ namespace DiamondKata
             return letter;
         }
 
-        public void RenderInput(string[,] matrix)
+        private void RenderInput(string[,] matrix)
         {
             for (var i = 0; i < matrix.GetLength(0); i++)
             {
