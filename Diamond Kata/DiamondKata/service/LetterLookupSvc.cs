@@ -5,8 +5,6 @@ using System.Text;
 
 namespace DiamondKata.service
 {
-    // Interface
-
     public class LetterLookupSvc
     {
        

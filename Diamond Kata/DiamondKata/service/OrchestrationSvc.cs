@@ -11,8 +11,6 @@ namespace DiamondKata.service
         string[,] matrix;
         MatrixPopulator matrixPopulator;
 
-        // constructor?
-
         public OrchestrationSvc()
         {
             matrixPopulator = new MatrixPopulator();
