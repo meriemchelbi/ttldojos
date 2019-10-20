@@ -1,0 +1,56 @@
+# LCD Digits
+
+Inspired by [TDD-Katas](https://github.com/garora/TDD-Katas/blob/master/KatasReadme.md), with some extra bonus rounds 😊
+
+> Your task is to create an LCD string representation of an
+> integer value using a 3x3 grid of space, underscore, and
+> pipe characters for each digit. Each digit is shown below
+> (using a dot instead of a space)
+> 
+> ```
+> ._.   ...   ._.   ._.   ...   ._.   ._.   ._.   ._.   ._.
+> |.|   ..|   ._|   ._|   |_|   |_.   |_.   ..|   |_|   |_|
+> |_|   ..|   |_.   ._|   ..|   ._|   |_|   ..|   |_|   ..|
+> ```
+> 
+> Example: `910` would render:
+> 
+> ```
+> ._. ... ._.
+> |_| ..| |.|
+> ..| ..| |_|
+> ```
+> 
+> _Spec from [TDD-Katas](https://github.com/garora/TDD-Katas/blob/master/KatasReadme.md#lcd-digits-)._
+
+---
+
+## Bonus Rounds ✨
+
+### #1 Light it up!
+
+Render gaps as blanks, digits as lime/red. For example:
+
+<div style="font-family:monospace">
+    ...&nbsp;.<span style="color:lime">_</span>.<br>
+    <span style="color:lime">|_|</span>&nbsp;.<span style="color:lime">_|</span><br>
+    ..<span style="color:lime">|</span>&nbsp;<span style="color:lime">|_</span>.<br>
+</div>
+
+---
+
+### #2 What's the time?
+
+Use this code to make an LCD clock - using your current sytem time (add seconds to get things moving). **Note:** You'll need separators, so using all those dots might not work so well 😉
+
+---
+
+### #3 Coding like a `22032÷4`!
+
+Make a simple calculator! To [KISS][kiss], only support basic addition, subtraction multiply and divide.
+`6427x5` the day! Are these words `(378x10000)+1637`? Let's take LCD around the `43312-5236`!
+
+You can go to town with this if you can make some sums that result in [these numbers](http://blog.presentandcorrect.com/250-words-you-can-spell-with-a-calculator).
+
+
+[kiss]:https://en.wikipedia.org/wiki/KISS_principle

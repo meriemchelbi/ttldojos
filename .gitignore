@@ -33,3 +33,16 @@ Guess Zoo/GuessZoo Stu/GuessZoo/.vs/GuessZoo/DesignTimeBuild/.dtbcache
 *.pdb
 *.dll
 *.sqlite
+*.sqlite
+.vs/ttldojos/v16/.suo
+*.testlog
+Diamond Kata/DiamondKata/.vs/DiamondKata/DesignTimeBuild/.dtbcache
+*.cache
+*.cache
+Guess Zoo/GuessZoo/obj/Debug/netcoreapp2.2/GuessZoo.assets.cache
+LCD Digits/LCDDigits/.vs/LCDDigits/DesignTimeBuild/.dtbcache
+Diamond Kata/DiamondKata/.vs/DiamondKata/DesignTimeBuild/.dtbcache
+pomodoro/obj/Release/netcoreapp2.2/PomodoroTests.csproj.CoreCompileInputs.cache
+pomodoro/obj/Debug/netcoreapp2.2/PomodoroTests.csproj.CoreCompileInputs.cache
+project_skeleton/obj/Debug/netcoreapp2.2/project_skeleton.assets.cache
+project_skeleton/obj/Release/netcoreapp2.2/project_skeleton.assets.cache

@@ -2,10 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Diamond Kata",
-    "\\Diamond Kata\\DiamondKata",
     "\\Diamond Kata\\DiamondKata\\domain",
-    "\\Diamond Kata\\DiamondKata\\service"
+    "\\LCD Digits",
+    "\\LCD Digits\\LCDDigits"
   ],
-  "SelectedNode": "\\Diamond Kata\\DiamondKata\\DiamondKata.sln",
+  "SelectedNode": "\\LCD Digits\\LCDDigits\\LCDDigits.csproj",
   "PreviewInSolutionExplorer": false
 }
