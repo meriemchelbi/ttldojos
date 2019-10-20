@@ -38,10 +38,22 @@ namespace LCDTests
            
         }
 
-        [Fact]
-        public void TestConvertToLCD()
+        [Theory]
+        [InlineData("56", 2)]
+        [InlineData("125", 3)]
+        [InlineData("3", 1)]
+        [InlineData("7684", 4)]
+        [InlineData("93775", 5)]
+        public void TestConvertToLCD(string input, int outputCount)
         {
+            // arrgange
+            var lcdConverter = new LCDConverter();
 
+            // act
+            var actual = lcdConverter.ConvertToLCD(input);
+
+            // assert
+            Assert.Equal(outputCount, actual.Count);
         }
     }
 }

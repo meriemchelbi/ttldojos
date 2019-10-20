@@ -12,3 +12,4 @@ C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digi
 C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsProgram\LCDDigits\obj\Debug\netcoreapp2.2\LCDDigits.AssemblyInfo.cs
 C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsProgram\LCDDigits\obj\Debug\netcoreapp2.2\LCDDigits.dll
 C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsProgram\LCDDigits\obj\Debug\netcoreapp2.2\LCDDigits.pdb
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsProgram\LCDDigits\obj\Debug\netcoreapp2.2\LCDDigits.csprojAssemblyReference.cache

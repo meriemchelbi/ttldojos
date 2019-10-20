@@ -18,9 +18,16 @@ namespace LCDDigitsProgram.LCDDigits.service
         {
             _lcdCharacterRepository = new LCDCharacterRepository();
         }
-        public IEnumerable<char> ConvertToLCD(string userInput)
+        public Dictionary<char, Dictionary<int, string>> ConvertToLCD(string userInput)
         {
-            throw new NotImplementedException();
+            var lcdOutput = new Dictionary<char, Dictionary<int, string>>();
+            foreach (var digit in userInput)
+            {
+                var lcdDigit = ConvertSingleDigit(digit);
+                lcdOutput.Add(digit, lcdDigit);
+
+            }
+            return lcdOutput;
         }
 
         public Dictionary<int, string> ConvertSingleDigit(char digitInput)
