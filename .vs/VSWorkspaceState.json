@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Diamond Kata",
-    "\\Diamond Kata\\DiamondKata\\domain",
     "\\LCD Digits",
-    "\\LCD Digits\\LCDDigits"
+    "\\LCD Digits\\LCDDigitsSolution"
   ],
-  "SelectedNode": "\\LCD Digits\\LCDDigits\\LCDDigits.csproj",
+  "SelectedNode": "\\LCD Digits\\LCDDigitsSolution\\LCDDigits.sln",
   "PreviewInSolutionExplorer": false
 }

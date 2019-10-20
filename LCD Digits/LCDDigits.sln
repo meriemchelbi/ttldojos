@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LCDTests", "LCDDigitsTest\LCDTests\LCDTests.csproj", "{DE56E436-925E-41DC-AB73-37461D0B8F60}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LCDDigits", "LCDDigitsProgram\LCDDigits\LCDDigits.csproj", "{83780954-3047-4A5B-A4DC-D017E3ACDB58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE56E436-925E-41DC-AB73-37461D0B8F60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE56E436-925E-41DC-AB73-37461D0B8F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE56E436-925E-41DC-AB73-37461D0B8F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE56E436-925E-41DC-AB73-37461D0B8F60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83780954-3047-4A5B-A4DC-D017E3ACDB58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83780954-3047-4A5B-A4DC-D017E3ACDB58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83780954-3047-4A5B-A4DC-D017E3ACDB58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83780954-3047-4A5B-A4DC-D017E3ACDB58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CBE96EF-0C29-49B3-9876-60B7FDCD650B}
+	EndGlobalSection
+EndGlobal

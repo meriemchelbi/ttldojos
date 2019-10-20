@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="LCDDigitsTests\**" />
+    <EmbeddedResource Remove="LCDDigitsTests\**" />
+    <None Remove="LCDDigitsTests\**" />
+  </ItemGroup>
+
+</Project>
