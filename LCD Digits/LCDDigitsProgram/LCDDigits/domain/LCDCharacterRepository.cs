@@ -8,6 +8,7 @@ namespace LCDDigitsProgram.LCDDigits.domain
     public class LCDCharacterRepository
     {
         public Dictionary<char, Dictionary<int, string>> LCDDigits { get; }
+
         private readonly Dictionary<int, string> _lcdZero;
         private readonly Dictionary<int, string> _lcdOne;
         private readonly Dictionary<int, string> _lcdTwo;

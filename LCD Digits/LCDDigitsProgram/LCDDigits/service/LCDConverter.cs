@@ -1,5 +1,7 @@
-﻿using System;
+﻿using LCDDigitsProgram.LCDDigits.domain;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace LCDDigitsProgram.LCDDigits.service
@@ -10,14 +12,31 @@ namespace LCDDigitsProgram.LCDDigits.service
     }
     public class LCDConverter
     {
+        private readonly LCDCharacterRepository _lcdCharacterRepository;
+
+        public LCDConverter()
+        {
+            _lcdCharacterRepository = new LCDCharacterRepository();
+        }
         public IEnumerable<char> ConvertToLCD(string userInput)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<char> ConvertSingleDigit(char letterInput)
+        public Dictionary<int, string> ConvertSingleDigit(char digitInput)
         {
-            throw new NotImplementedException();
+            var lcdDigits = _lcdCharacterRepository.LCDDigits;
+            var digitLookup = new Dictionary<int, string>();
+
+            foreach (var digit in lcdDigits)
+            {
+                if (digit.Key == digitInput)
+                {
+                    digitLookup = digit.Value;
+                }
+            }
+
+            return digitLookup;
         }
     }
 }

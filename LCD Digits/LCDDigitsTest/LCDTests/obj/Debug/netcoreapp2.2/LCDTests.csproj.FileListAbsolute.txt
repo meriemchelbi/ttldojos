@@ -25,3 +25,7 @@ C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digi
 C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\obj\Debug\netcoreapp2.2\LCDTests.AssemblyInfo.cs
 C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\obj\Debug\netcoreapp2.2\LCDTests.dll
 C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\obj\Debug\netcoreapp2.2\LCDTests.pdb
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\obj\Debug\netcoreapp2.2\LCDTests.csprojAssemblyReference.cache
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\bin\Debug\netcoreapp2.2\LCDDigits.dll
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\bin\Debug\netcoreapp2.2\LCDDigits.pdb
+C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\obj\Debug\netcoreapp2.2\LCDTests.csproj.CopyComplete
