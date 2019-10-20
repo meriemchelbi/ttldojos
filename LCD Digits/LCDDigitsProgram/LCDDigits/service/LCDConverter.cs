@@ -8,13 +8,16 @@ namespace LCDDigitsProgram.LCDDigits.service
     {
 
     }
-    class LCDConverter
+    public class LCDConverter
     {
         public IEnumerable<char> ConvertToLCD(string userInput)
         {
             throw new NotImplementedException();
         }
 
-
+        public IEnumerable<char> ConvertSingleDigit(char letterInput)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
