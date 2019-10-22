@@ -13,3 +13,14 @@ C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digi
 C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsProgram\LCDDigits\obj\Debug\netcoreapp2.2\LCDDigits.dll
 C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsProgram\LCDDigits\obj\Debug\netcoreapp2.2\LCDDigits.pdb
 C:\Users\Meriem\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsProgram\LCDDigits\obj\Debug\netcoreapp2.2\LCDDigits.csprojAssemblyReference.cache
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsProgram\LCDDigits\bin\Debug\netcoreapp2.2\LCDDigits.deps.json
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsProgram\LCDDigits\bin\Debug\netcoreapp2.2\LCDDigits.runtimeconfig.json
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsProgram\LCDDigits\bin\Debug\netcoreapp2.2\LCDDigits.runtimeconfig.dev.json
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsProgram\LCDDigits\bin\Debug\netcoreapp2.2\LCDDigits.dll
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsProgram\LCDDigits\bin\Debug\netcoreapp2.2\LCDDigits.pdb
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsProgram\LCDDigits\obj\Debug\netcoreapp2.2\LCDDigits.csprojAssemblyReference.cache
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsProgram\LCDDigits\obj\Debug\netcoreapp2.2\LCDDigits.csproj.CoreCompileInputs.cache
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsProgram\LCDDigits\obj\Debug\netcoreapp2.2\LCDDigits.AssemblyInfoInputs.cache
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsProgram\LCDDigits\obj\Debug\netcoreapp2.2\LCDDigits.AssemblyInfo.cs
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsProgram\LCDDigits\obj\Debug\netcoreapp2.2\LCDDigits.dll
+C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsProgram\LCDDigits\obj\Debug\netcoreapp2.2\LCDDigits.pdb

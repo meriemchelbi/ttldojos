@@ -21,8 +21,8 @@ namespace LCDDigitsProgram.LCDDigits.service
         public void StringToLCD()
         {
             var userInput = _inputCapturer.GetUserInput();
-            var lcdCollection = _lcdConverter.ConvertToLCD(userInput);
-            _outputRenderer.renderCollection(lcdCollection);
+            var lcdLookup = _lcdConverter.LookupLCDNotation(userInput);
+            _outputRenderer.renderCollection(lcdLookup);
 
         }
 

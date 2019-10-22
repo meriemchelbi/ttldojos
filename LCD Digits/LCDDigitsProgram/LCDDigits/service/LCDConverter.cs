@@ -18,13 +18,17 @@ namespace LCDDigitsProgram.LCDDigits.service
         {
             _lcdCharacterRepository = new LCDCharacterRepository();
         }
-        public Dictionary<char, Dictionary<int, string>> ConvertToLCD(string userInput)
+        public Dictionary<char, Dictionary<int, string>> LookupLCDNotation(string userInput)
         {
             var lcdOutput = new Dictionary<char, Dictionary<int, string>>();
             foreach (var digit in userInput)
             {
-                var lcdDigit = ConvertSingleDigit(digit);
-                lcdOutput.Add(digit, lcdDigit);
+                if (!lcdOutput.ContainsKey(digit))
+                {
+                    var lcdDigit = ConvertSingleDigit(digit);
+                    lcdOutput.Add(digit, lcdDigit);
+                }
+                
 
             }
             return lcdOutput;
@@ -40,6 +44,7 @@ namespace LCDDigitsProgram.LCDDigits.service
                 if (digit.Key == digitInput)
                 {
                     digitLookup = digit.Value;
+                    break;
                 }
             }
 
