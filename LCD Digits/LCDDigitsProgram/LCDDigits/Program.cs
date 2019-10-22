@@ -9,9 +9,13 @@ namespace LCDDigits
 
         static void Main(string[] args)
         {
+            bool running = true;
 
-            _lcdDigitsOrchestrator.StringToLCD();
-
+            while (running)
+            {
+                running = _lcdDigitsOrchestrator.StringToLCD();
+            }
+            
         }
     }
 }

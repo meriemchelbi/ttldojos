@@ -18,12 +18,12 @@ namespace LCDDigitsProgram.LCDDigits.service
             _outputRenderer = new OutputRenderer();
         }
 
-        public void StringToLCD()
+        public bool StringToLCD()
         {
             var userInput = _inputCapturer.GetUserInput();
             var result = _lcdConverter.LookupLCDNotation(userInput);
-            _outputRenderer.renderCollection(result);
-
+            var outcome = _outputRenderer.RenderResult(userInput, result);
+            return outcome;
         }
 
     }

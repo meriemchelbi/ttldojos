@@ -12,7 +12,10 @@ namespace LCDDigitsProgram.LCDDigits.service
     {
         public string GetUserInput()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("\nPlease enter a number... any number. Or enter Q to quit.");
+            var userInput = Console.ReadLine().ToUpper();
+
+            return userInput;
         }
     }
 }
