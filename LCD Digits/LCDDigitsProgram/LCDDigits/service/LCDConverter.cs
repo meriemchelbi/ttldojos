@@ -18,19 +18,16 @@ namespace LCDDigitsProgram.LCDDigits.service
         {
             _lcdCharacterRepository = new LCDCharacterRepository();
         }
-        public Dictionary<char, Dictionary<int, string>> LookupLCDNotation(string userInput)
+        public Dictionary<int, Dictionary<int, string>> LookupLCDNotation(string userInput)
         {
-            var lcdOutput = new Dictionary<char, Dictionary<int, string>>();
-            foreach (var digit in userInput)
+            var lcdOutput = new Dictionary<int, Dictionary<int, string>>();
+            for (int i = 0; i < userInput.Length; i++)
             {
-                if (!lcdOutput.ContainsKey(digit))
-                {
-                    var lcdDigit = ConvertSingleDigit(digit);
-                    lcdOutput.Add(digit, lcdDigit);
-                }
+                var lcdDigit = ConvertSingleDigit(userInput[i]);
+                lcdOutput.Add(i, lcdDigit);
                 
-
-            }
+            } 
+            
             return lcdOutput;
         }
 
