@@ -4,9 +4,13 @@ using System.Text;
 
 namespace LCDDigitsProgram.LCDDigits.service
 {
-    public class OutputRenderer
+    public interface IRenderOutput
     {
-        internal bool RenderResult(string userInput, Dictionary<int, Dictionary<int, string>> lcdCollection)
+        bool RenderResult(string userInput, Dictionary<int, Dictionary<int, string>> lcdCollection);
+    }
+    public class OutputRenderer: IRenderOutput
+    {
+        public bool RenderResult(string userInput, Dictionary<int, Dictionary<int, string>> lcdCollection)
         {
             if (userInput == "Q")
             {

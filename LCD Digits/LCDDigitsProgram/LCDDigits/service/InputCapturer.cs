@@ -6,9 +6,9 @@ namespace LCDDigitsProgram.LCDDigits.service
 {
     public interface ICaptureInput
     {
-
+        string GetUserInput();
     }
-    class InputCapturer
+    class InputCapturer: ICaptureInput
     {
         public string GetUserInput()
         {

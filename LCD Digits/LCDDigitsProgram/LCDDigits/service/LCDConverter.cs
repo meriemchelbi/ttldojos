@@ -8,9 +8,9 @@ namespace LCDDigitsProgram.LCDDigits.service
 {
     public interface IConvertToLCD
     {
-
+        Dictionary<int, Dictionary<int, string>> LookupLCDNotation(string userInput);
     }
-    public class LCDConverter
+    public class LCDConverter: IConvertToLCD
     {
         private readonly LCDCharacterRepository _lcdCharacterRepository;
 

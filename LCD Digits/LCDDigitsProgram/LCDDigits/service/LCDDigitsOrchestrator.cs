@@ -4,21 +4,25 @@ using System.Text;
 
 namespace LCDDigitsProgram.LCDDigits.service
 {
-    class LCDDigitsOrchestrator
+    public interface IOrchestrateLCDConversion
+    {
+        bool ConvertStringToLCD();
+    }
+    class LCDConversionOrchestrator: IOrchestrateLCDConversion
     {
         private readonly InputCapturer _inputCapturer;
         private readonly LCDConverter _lcdConverter;
         private readonly OutputRenderer _outputRenderer;
 
         
-        public LCDDigitsOrchestrator()
+        public LCDConversionOrchestrator()
         {
             _inputCapturer = new InputCapturer();
             _lcdConverter = new LCDConverter();
             _outputRenderer = new OutputRenderer();
         }
 
-        public bool StringToLCD()
+        public bool ConvertStringToLCD()
         {
             var userInput = _inputCapturer.GetUserInput();
             var result = _lcdConverter.LookupLCDNotation(userInput);

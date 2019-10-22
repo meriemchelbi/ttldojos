@@ -5,7 +5,7 @@ namespace LCDDigits
 {
     class Program
     {
-        static readonly LCDDigitsOrchestrator _lcdDigitsOrchestrator = new LCDDigitsOrchestrator();
+        static readonly LCDConversionOrchestrator _lcdDigitsOrchestrator = new LCDConversionOrchestrator();
 
         static void Main(string[] args)
         {
@@ -13,7 +13,7 @@ namespace LCDDigits
 
             while (running)
             {
-                running = _lcdDigitsOrchestrator.StringToLCD();
+                running = _lcdDigitsOrchestrator.ConvertStringToLCD();
             }
             
         }

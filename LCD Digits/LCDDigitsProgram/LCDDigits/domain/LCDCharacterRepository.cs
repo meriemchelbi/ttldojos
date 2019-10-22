@@ -4,7 +4,6 @@ using System.Text;
 
 namespace LCDDigitsProgram.LCDDigits.domain
 {
-    // should this be a struct?
     public class LCDCharacterRepository
     {
         public Dictionary<char, Dictionary<int, string>> LCDDigits { get; }
