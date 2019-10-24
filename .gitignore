@@ -51,3 +51,16 @@ LCD Digits/LCDDigitsSolution/.vs/LCDDigits/DesignTimeBuild/.dtbcache
 LCD Digits/LCDDigitsProgram/.vs/LCDDigits/DesignTimeBuild/.dtbcache
 LCD Digits/.vs/LCDDigits/DesignTimeBuild/.dtbcache
 LCD Digits/.vs/LCDDigits/lut/coverage.lutdata
+*.ps1
+*.p7s
+*.nupkg
+*.config
+*.json
+*.xml
+*.csproj
+project_skeleton/obj/Debug/netcoreapp2.2/project_skeleton.AssemblyInfo.cs
+*.cache
+*.tdnet
+*.targets
+*.props
+Bowling/BowlingSolution/Properties/AssemblyInfo.cs
