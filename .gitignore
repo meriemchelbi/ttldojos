@@ -10,7 +10,6 @@ Guess Zoo/GuessZoo/.vs/GuessZoo/v16/Server/sqlite3/db.lock
 .vs/ttldojos/v16/TestStore/0/000-0000-ChelbsLpt.testlog
 .vs/ttldojos/v16/TestStore/0/000-0000.testlog
 .vs/VSWorkspaceState.json
-*.cache
 Guess Zoo/GuessZoo/.vs/GuessZoo/v16/Server/sqlite3/db.lock
 *.ide
 *.ide-shm
@@ -57,7 +56,6 @@ LCD Digits/.vs/LCDDigits/lut/coverage.lutdata
 *.config
 *.json
 *.xml
-*.csproj
 project_skeleton/obj/Debug/netcoreapp2.2/project_skeleton.AssemblyInfo.cs
 *.cache
 *.tdnet
