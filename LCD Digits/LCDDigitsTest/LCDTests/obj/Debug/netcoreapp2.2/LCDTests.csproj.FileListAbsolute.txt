@@ -46,3 +46,19 @@ C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Dig
 C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\obj\Debug\netcoreapp2.2\LCDTests.csproj.CopyComplete
 C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\obj\Debug\netcoreapp2.2\LCDTests.dll
 C:\Users\meriemc\OneDrive - Trainline Ltd\Programming 101\Dojos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\obj\Debug\netcoreapp2.2\LCDTests.pdb
+C:\Users\meriemc\Documents\Repos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\meriemc\Documents\Repos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\meriemc\Documents\Repos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\meriemc\Documents\Repos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\bin\Debug\netcoreapp2.2\LCDTests.deps.json
+C:\Users\meriemc\Documents\Repos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\bin\Debug\netcoreapp2.2\LCDTests.runtimeconfig.json
+C:\Users\meriemc\Documents\Repos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\bin\Debug\netcoreapp2.2\LCDTests.runtimeconfig.dev.json
+C:\Users\meriemc\Documents\Repos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\bin\Debug\netcoreapp2.2\LCDTests.dll
+C:\Users\meriemc\Documents\Repos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\bin\Debug\netcoreapp2.2\LCDTests.pdb
+C:\Users\meriemc\Documents\Repos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\bin\Debug\netcoreapp2.2\LCDDigits.dll
+C:\Users\meriemc\Documents\Repos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\bin\Debug\netcoreapp2.2\LCDDigits.pdb
+C:\Users\meriemc\Documents\Repos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\obj\Debug\netcoreapp2.2\LCDTests.csprojAssemblyReference.cache
+C:\Users\meriemc\Documents\Repos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\obj\Debug\netcoreapp2.2\LCDTests.AssemblyInfoInputs.cache
+C:\Users\meriemc\Documents\Repos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\obj\Debug\netcoreapp2.2\LCDTests.AssemblyInfo.cs
+C:\Users\meriemc\Documents\Repos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\obj\Debug\netcoreapp2.2\LCDTests.csproj.CopyComplete
+C:\Users\meriemc\Documents\Repos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\obj\Debug\netcoreapp2.2\LCDTests.dll
+C:\Users\meriemc\Documents\Repos\ttldojos\LCD Digits\LCDDigitsTest\LCDTests\obj\Debug\netcoreapp2.2\LCDTests.pdb
