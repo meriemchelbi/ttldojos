@@ -1,0 +1,36 @@
+# Animalia
+
+> A designated person starts by saying an animal of their choice, i.e. PIG. Then the next would have to say an animal starting with the last letter of that animal, i.e. GOAT. The next would have to start with the letter T. It goes on until someone can't think of an animal and they are out.
+>
+> ### Examples
+> 
+> _This is a good sequence, all first letters match the previous last letter._
+> 
+> 1. Pig
+> 1. Goat
+> 1. Tiger
+> 1. Rat
+> 
+> _This sequence gets broken due to an incorrect animal being chosen._
+>
+> 1. Pig
+> 1. Goat
+> 1. Rabbit  << 'Rabbit' doesn't begin with 't'!
+
+## Tasks (Suggested Order)
+
+- [ ]  Validate the first letter matches the last
+- [ ]  Make sure animals are not repeated in the sequence.
+- [ ]  Ensure [they are animals](https://github.com/hzlzh/Domain-Name-List/blob/master/Animal-words.txt) - search '`hzlzh animal words`' for a text file of valid animals.
+- [ ]  Make a console app to play the game solo.
+- [ ]  Add a computer opponent!
+
+## Bonus Rounds!
+
+- [ ] Add some 'lives' to the game
+- [ ] Add 'hearts' to the game so you can earn lives back
+- [ ] Add 'did you mean?' handling - some animal names are tricky
+
+
+
+As always, **have fun!**
