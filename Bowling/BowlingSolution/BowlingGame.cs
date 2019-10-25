@@ -17,7 +17,7 @@ namespace BowlingSolution
 
         public List<Frame> Scores { get; private set; }
 
-        internal void LoadGameScores()
+        public void LoadGameScores()
         {
             throw new NotImplementedException();
         }

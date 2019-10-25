@@ -1,64 +1,20 @@
 
 *.lock
-*.lock
-*.lock
 *.cache
 *.suo
-*.cache
-*.cache
-Guess Zoo/GuessZoo/.vs/GuessZoo/v16/Server/sqlite3/db.lock
-.vs/ttldojos/v16/TestStore/0/000-0000-ChelbsLpt.testlog
-.vs/ttldojos/v16/TestStore/0/000-0000.testlog
-.vs/VSWorkspaceState.json
-Guess Zoo/GuessZoo/.vs/GuessZoo/v16/Server/sqlite3/db.lock
 *.ide
-*.ide-shm
-*.ide-wal
-Guess Zoo/GuessZoo Stu/GuessZoo/.vs/GuessZoo/DesignTimeBuild/.dtbcache
 *.testlog
 *.manifest
 *.sqlite
-*.sqlite
-*.cache
-*.cache
-*.cache
-*.sqlite
-*.dll
 *.dll
 *.pdb
-*.pdb
-*.dll
-*.pdb
-*.pdb
-*.dll
 *.sqlite
-*.sqlite
-.vs/ttldojos/v16/.suo
+*.suo
 *.testlog
-Diamond Kata/DiamondKata/.vs/DiamondKata/DesignTimeBuild/.dtbcache
-*.cache
-*.cache
-*.cache
-Guess Zoo/GuessZoo/obj/Debug/netcoreapp2.2/GuessZoo.assets.cache
-LCD Digits/LCDDigits/.vs/LCDDigits/DesignTimeBuild/.dtbcache
-Diamond Kata/DiamondKata/.vs/DiamondKata/DesignTimeBuild/.dtbcache
-pomodoro/obj/Release/netcoreapp2.2/PomodoroTests.csproj.CoreCompileInputs.cache
-pomodoro/obj/Debug/netcoreapp2.2/PomodoroTests.csproj.CoreCompileInputs.cache
-project_skeleton/obj/Debug/netcoreapp2.2/project_skeleton.assets.cache
-project_skeleton/obj/Release/netcoreapp2.2/project_skeleton.assets.cache
-LCD Digits/LCDDigitsSolution/.vs/LCDDigits/DesignTimeBuild/.dtbcache
-LCD Digits/LCDDigitsProgram/.vs/LCDDigits/DesignTimeBuild/.dtbcache
-LCD Digits/.vs/LCDDigits/DesignTimeBuild/.dtbcache
-LCD Digits/.vs/LCDDigits/lut/coverage.lutdata
+*.dtbcache
 *.ps1
 *.p7s
-*.nupkg
 *.config
-*.json
-*.xml
-project_skeleton/obj/Debug/netcoreapp2.2/project_skeleton.AssemblyInfo.cs
-*.cache
 *.tdnet
 *.targets
 *.props
-Bowling/BowlingSolution/Properties/AssemblyInfo.cs

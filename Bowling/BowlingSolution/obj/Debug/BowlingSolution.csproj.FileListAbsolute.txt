@@ -28,3 +28,17 @@ C:\Users\meriemc\Documents\Repos\ttldojos\Bowling\BowlingSolution\obj\Debug\Bowl
 C:\Users\meriemc\Documents\Repos\ttldojos\Bowling\BowlingSolution\obj\Debug\BowlingSolution.exe
 C:\Users\meriemc\Documents\Repos\ttldojos\Bowling\BowlingSolution\obj\Debug\BowlingSolution.pdb
 C:\Users\meriemc\Documents\Repos\ttldojos\Bowling\BowlingSolution\obj\Debug\BowlingSolution.csprojAssemblyReference.cache
+C:\Users\meriemc\Documents\GitHub\ttldojos\Bowling\BowlingSolution\obj\Debug\BowlingSolution.exe
+C:\Users\meriemc\Documents\GitHub\ttldojos\Bowling\BowlingSolution\bin\Debug\BowlingSolution.exe.config
+C:\Users\meriemc\Documents\GitHub\ttldojos\Bowling\BowlingSolution\bin\Debug\BowlingSolution.exe
+C:\Users\meriemc\Documents\GitHub\ttldojos\Bowling\BowlingSolution\bin\Debug\BowlingSolution.pdb
+C:\Users\meriemc\Documents\GitHub\ttldojos\Bowling\BowlingSolution\bin\Debug\xunit.abstractions.dll
+C:\Users\meriemc\Documents\GitHub\ttldojos\Bowling\BowlingSolution\bin\Debug\xunit.assert.dll
+C:\Users\meriemc\Documents\GitHub\ttldojos\Bowling\BowlingSolution\bin\Debug\xunit.core.dll
+C:\Users\meriemc\Documents\GitHub\ttldojos\Bowling\BowlingSolution\bin\Debug\xunit.execution.desktop.dll
+C:\Users\meriemc\Documents\GitHub\ttldojos\Bowling\BowlingSolution\bin\Debug\xunit.abstractions.xml
+C:\Users\meriemc\Documents\GitHub\ttldojos\Bowling\BowlingSolution\bin\Debug\xunit.assert.xml
+C:\Users\meriemc\Documents\GitHub\ttldojos\Bowling\BowlingSolution\bin\Debug\xunit.core.xml
+C:\Users\meriemc\Documents\GitHub\ttldojos\Bowling\BowlingSolution\bin\Debug\xunit.execution.desktop.xml
+C:\Users\meriemc\Documents\GitHub\ttldojos\Bowling\BowlingSolution\obj\Debug\BowlingSolution.csproj.CopyComplete
+C:\Users\meriemc\Documents\GitHub\ttldojos\Bowling\BowlingSolution\obj\Debug\BowlingSolution.pdb

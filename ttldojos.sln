@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingSolution", "Bowling\BowlingSolution\BowlingSolution.csproj", "{30C2D831-9099-44D6-A219-3ACF8130AEA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DojoTests", "DojoTests\DojoTests.csproj", "{3FDC76B2-7781-467B-A155-A769A89D983E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DojoTests", "DojoTests\DojoTests.csproj", "{469BCE9B-FE51-420E-B583-94F5DD8590D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{30C2D831-9099-44D6-A219-3ACF8130AEA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30C2D831-9099-44D6-A219-3ACF8130AEA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30C2D831-9099-44D6-A219-3ACF8130AEA0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3FDC76B2-7781-467B-A155-A769A89D983E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3FDC76B2-7781-467B-A155-A769A89D983E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3FDC76B2-7781-467B-A155-A769A89D983E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3FDC76B2-7781-467B-A155-A769A89D983E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{469BCE9B-FE51-420E-B583-94F5DD8590D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{469BCE9B-FE51-420E-B583-94F5DD8590D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{469BCE9B-FE51-420E-B583-94F5DD8590D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{469BCE9B-FE51-420E-B583-94F5DD8590D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
