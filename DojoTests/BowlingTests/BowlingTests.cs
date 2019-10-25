@@ -11,6 +11,9 @@ namespace DojoTests.BowlingTests
     {
         [Theory]
         [InlineData("X X X X X X X X X X X X", "555555555555", "555555555555")]
+        [InlineData("9- 9- 9- 9- 9- 9- 9- 9- 9- 9-", "9999999999", "0000000000")]
+        [InlineData("5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/ 5/5", "55555555555", "00000000000")]
+
         public void TestLoadGameScores(string scoresString, string round1Scores, string round2Scores)
         {
             var bowling = new BowlingGame(scoresString);
