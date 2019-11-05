@@ -65,27 +65,23 @@ namespace GildedRoseTests
         }
 
         [Theory]
-        [InlineData("Aged Brie", 15, 6)]
-        [InlineData("Backstage Passes", 10, 7)]
-        [InlineData("Aged Brie", 7, 7)]
-        [InlineData("Backstage Passes", 5, 8)]
-        [InlineData("Backstage Passes", -2, 8)]
-        [InlineData("Elixir of Mongoose", 5, 4)] // Regression- quality decrements for non-backstage pass items
-
+        [InlineData(15, 6)]
+        [InlineData(10, 7)]
+        [InlineData(7, 7)]
+        [InlineData(5, 8)]
+        [InlineData(-2, 8)]
         // “Aged Brie” actually increases in Quality the older it gets
         // “Backstage passes”, like aged brie, increases in Quality as it’s SellIn value approaches; 
         // Quality increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but Quality drops to 0 after the concert
-        public void SomeProductsIncreaseInQualityOverTime(string itemName, int sellIn, int expectedQuality)
+        public void SomeProductsIncreaseInQualityOverTime(int sellIn, int expectedQuality)
         {
             var item = new Item()
             {
                 Quality = 5,
-                Name = itemName,
                 SellIn = sellIn
             };
-            
-            var strategyFactory = new DegradationStrategyFactory();
-            var strategy = strategyFactory.GetDegradeStrategy(item);
+
+            var strategy = new BackstagePassDegradationStrategy();
             strategy.Degrade(item);
 
             Assert.Equal(expectedQuality, item.Quality);
@@ -145,20 +141,19 @@ namespace GildedRoseTests
             Assert.Equal(expectedQuality, item.Quality);
         }
 
-        [Fact]
-        // TODO how can I make this test use a Theory?
-        //[InlineData("Aged Brie")]
-        //[InlineData("Backstage passes to a TAFKAL80ETC concert")]
-        //[InlineData("Generic sword")]
-        //[InlineData("Sulfuras, Hand of Ragnaros")]
-        public void DegradationStrategyFactoryReturnsCorrectStrategy()
+        [Theory]
+        [InlineData("Aged Brie", typeof(BackstagePassDegradationStrategy))]
+        [InlineData("Backstage passes to a TAFKAL80ETC concert", typeof(BackstagePassDegradationStrategy))]
+        [InlineData("Generic sword", typeof(StandardDegrador))]
+        [InlineData("Sulfuras, Hand of Ragnaros", typeof(LegendaryDegradationStrategy))]
+        public void DegradationStrategyFactoryReturnsCorrectStrategy(string itemName, object strategyType)
         {
             var strategyFactory = new DegradationStrategyFactory();
-            var item = new Item() { Name = "Aged Brie"};
+            var item = new Item() { Name = itemName};
 
             var strategy = strategyFactory.GetDegradeStrategy(item);
 
-            Assert.IsType<BackstagePassDegradationStrategy>(strategy);
+            Assert.Equal(strategyType, strategy.GetType());
         }
 
         [Fact]

@@ -1,28 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose\\GildedRose-Refactoring-Kata\\GildedRoseTests\\GildedRoseTests.csproj": {}
+    "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose-Refactoring-Kata\\GildedRoseTests\\GildedRoseTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose\\GildedRose-Refactoring-Kata\\csharp\\csharp.csproj": {
+    "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose-Refactoring-Kata\\csharp\\csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose\\GildedRose-Refactoring-Kata\\csharp\\csharp.csproj",
+        "projectUniqueName": "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose-Refactoring-Kata\\csharp\\csharp.csproj",
         "projectName": "csharp",
-        "projectPath": "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose\\GildedRose-Refactoring-Kata\\csharp\\csharp.csproj"
+        "projectPath": "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose-Refactoring-Kata\\csharp\\csharp.csproj"
       },
       "frameworks": {
         "net452": {}
       }
     },
-    "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose\\GildedRose-Refactoring-Kata\\GildedRoseTests\\GildedRoseTests.csproj": {
+    "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose-Refactoring-Kata\\GildedRoseTests\\GildedRoseTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose\\GildedRose-Refactoring-Kata\\GildedRoseTests\\GildedRoseTests.csproj",
+        "projectUniqueName": "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose-Refactoring-Kata\\GildedRoseTests\\GildedRoseTests.csproj",
         "projectName": "GildedRoseTests",
-        "projectPath": "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose\\GildedRose-Refactoring-Kata\\GildedRoseTests\\GildedRoseTests.csproj",
+        "projectPath": "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose-Refactoring-Kata\\GildedRoseTests\\GildedRoseTests.csproj",
         "packagesPath": "C:\\Users\\meriemc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose\\GildedRose-Refactoring-Kata\\GildedRoseTests\\obj\\",
+        "outputPath": "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose-Refactoring-Kata\\GildedRoseTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,8 +41,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose\\GildedRose-Refactoring-Kata\\csharp\\csharp.csproj": {
-                "projectPath": "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose\\GildedRose-Refactoring-Kata\\csharp\\csharp.csproj"
+              "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose-Refactoring-Kata\\csharp\\csharp.csproj": {
+                "projectPath": "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\GildedRose-Refactoring-Kata\\csharp\\csharp.csproj"
               }
             }
           }
