@@ -10,12 +10,25 @@ namespace seymour.Services
         string GetMessage();
     }
 
-    public class WeatherService : IWeatherService
 
+    public interface IMeteorologicalService
     {
+        int GetReading();
+    }
+
+    public class WeatherService : IWeatherService
+    {
+        private readonly IMeteorologicalService _meteorologicalService;
+
+        public WeatherService(IMeteorologicalService meteorologicalService)
+        {
+            _meteorologicalService = meteorologicalService;
+        }
+
         public string GetMessage()
         {
-            return "skjdksjds";
+            var readin = _meteorologicalService.GetReading();
+            return $"MyReading:{readin}";
         }
     }
 
