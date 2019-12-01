@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\Kentface\\seymour\\seymour\\seymour.csproj": {}
+    "C:\\Users\\Gordon\\Documents\\GitHub\\ttldojos\\ttldojos\\seymour\\seymour\\seymour.csproj": {}
   },
   "projects": {
-    "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\Kentface\\seymour\\seymour\\seymour.csproj": {
+    "C:\\Users\\Gordon\\Documents\\GitHub\\ttldojos\\ttldojos\\seymour\\seymour\\seymour.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\Kentface\\seymour\\seymour\\seymour.csproj",
+        "projectUniqueName": "C:\\Users\\Gordon\\Documents\\GitHub\\ttldojos\\ttldojos\\seymour\\seymour\\seymour.csproj",
         "projectName": "seymour",
-        "projectPath": "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\Kentface\\seymour\\seymour\\seymour.csproj",
-        "packagesPath": "C:\\Users\\meriemc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\meriemc\\OneDrive - Trainline Ltd\\Programming 101\\Kentface\\seymour\\seymour\\obj\\",
+        "projectPath": "C:\\Users\\Gordon\\Documents\\GitHub\\ttldojos\\ttldojos\\seymour\\seymour\\seymour.csproj",
+        "packagesPath": "C:\\Users\\Gordon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gordon\\Documents\\GitHub\\ttldojos\\ttldojos\\seymour\\seymour\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\meriemc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gordon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
