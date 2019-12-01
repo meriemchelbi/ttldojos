@@ -10,12 +10,6 @@ namespace seymour.Services
         string GetMessage();
     }
 
-
-    public interface IMeteorologicalService
-    {
-        int GetReading();
-    }
-
     public class WeatherService : IWeatherService
     {
         private readonly IMeteorologicalService _meteorologicalService;
@@ -27,16 +21,10 @@ namespace seymour.Services
 
         public string GetMessage()
         {
-            var readin = _meteorologicalService.GetReading();
-            return $"MyReading:{readin}";
+            var reading = _meteorologicalService.GetReading();
+            
+            return $"MyReading:{reading}";
         }
-    }
-
-    public class PremiumsWervice : IWeatherService
-    {
-        public string GetMessage()
-        {
-            throw new NotImplementedException();
-        }
+    
     }
 }

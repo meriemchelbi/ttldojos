@@ -25,9 +25,9 @@ namespace seymour.Controllers
         }
 
         [HttpGet()]
-        public IEnumerable<WeatherForecast> Get(string message)
+        public IEnumerable<WeatherForecast> Get()
         {
-           var m =  _weatherService.GetMessage();
+           //var m =  _weatherService.GetMessage();
 
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast

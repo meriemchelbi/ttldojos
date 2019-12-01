@@ -13,9 +13,9 @@ namespace seymour
     {
         public static void Main(string[] args)
         {
-            var buildr = CreateHostBuilder(args);
-              var thang =   buildr.Build();
-                   thang.Run();
+            var builder = CreateHostBuilder(args);
+            var myApplication = builder.Build();
+            myApplication.Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
