@@ -17,6 +17,7 @@ namespace AddressProcessing.Tests
         }
 
         [Test]
+        // Asserts that SendMailShot executes for all lines in CSV test file
         public void Should_send_mail_using_mailshot_service()
         {
             var processor = new AddressFileProcessor(_fakeMailShotService);

@@ -49,6 +49,11 @@ namespace AddressProcessing.CSV
             WriteLine(outPut);
         }
 
+        private void WriteLine(string line)
+        {
+            _writerStream.WriteLine(line);
+        }
+
         public bool Read(string column1, string column2)
         {
             const int FIRST_COLUMN = 0;
@@ -60,6 +65,7 @@ namespace AddressProcessing.CSV
             char[] separator = { '\t' };
 
             line = ReadLine();
+            // add null checking here- if line null blows up
             columns = line.Split(separator);
 
             if (columns.Length == 0)
@@ -116,10 +122,6 @@ namespace AddressProcessing.CSV
             }
         }
 
-        private void WriteLine(string line)
-        {
-            _writerStream.WriteLine(line);
-        }
 
         private string ReadLine()
         {
