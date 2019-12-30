@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 
 namespace AddressProcessing.CSV
 {
@@ -10,134 +9,63 @@ namespace AddressProcessing.CSV
 
     public class CSVReaderWriter
     {
-        private StreamReader _readerStream = null;
-        private StreamWriter _writerStream = null;
+        private readonly CSVReader _csvReader;
+        private readonly CSVWriter _csvWriter;
+
+        // read only fields so only one file associated with an instance of the ReaderWriter
+        public CSVReaderWriter()
+        {
+            _csvReader = new CSVReader();
+            _csvWriter = new CSVWriter();
+        }
 
         [Flags]
         public enum Mode { Read = 1, Write = 2 };
 
-        public void Open(string fileName, Mode mode)
+        public object Open(string fileName, Mode mode)
         {
+            object stream;
             if (mode == Mode.Read)
             {
-                _readerStream = File.OpenText(fileName);
+                stream = _csvReader.Open(fileName);
             }
             else if (mode == Mode.Write)
             {
-                FileInfo fileInfo = new FileInfo(fileName);
-                _writerStream = fileInfo.CreateText();
+                stream = _csvWriter.Open(fileName);
             }
             else
             {
                 throw new Exception("Unknown file mode for " + fileName);
             }
+
+            return stream;
         }
 
-        public void Write(params string[] columns)
+        public bool Read(string name, string address)
         {
-            string outPut = "";
-
-            for (int i = 0; i < columns.Length; i++)
-            {
-                outPut += columns[i];
-                if ((columns.Length - 1) != i)
-                {
-                    outPut += "\t";
-                }
-            }
-
-            WriteLine(outPut);
+            return _csvReader.Read(name, address);
         }
 
-        private void WriteLine(string line)
+        public bool Read(out string name, out string address)
         {
-            _writerStream.WriteLine(line);
+            return _csvReader.Read(out name, out address);
         }
 
-        public bool Read(string column1, string column2)
+        // moved private methods readline & writeline, as not consumers' concern 
+        public void Write()
         {
-            const int FIRST_COLUMN = 0;
-            const int SECOND_COLUMN = 1;
-
-            string line;
-            string[] columns;
-
-            char[] separator = { '\t' };
-
-            line = ReadLine();
-            // add null checking here- if line null blows up
-            columns = line.Split(separator);
-
-            if (columns.Length == 0)
-            {
-                column1 = null;
-                column2 = null;
-
-                return false;
-            }
-            else
-            {
-                column1 = columns[FIRST_COLUMN];
-                column2 = columns[SECOND_COLUMN];
-
-                return true;
-            }
-        }
-
-        public bool Read(out string column1, out string column2)
-        {
-            const int FIRST_COLUMN = 0;
-            const int SECOND_COLUMN = 1;
-
-            string line;
-            string[] columns;
-
-            char[] separator = { '\t' };
-
-            line = ReadLine();
-
-            if (line == null)
-            {
-                column1 = null;
-                column2 = null;
-
-                return false;
-            }
-
-            columns = line.Split(separator);
-
-            if (columns.Length == 0)
-            {
-                column1 = null;
-                column2 = null;
-
-                return false;
-            } 
-            else
-            {
-                column1 = columns[FIRST_COLUMN];
-                column2 = columns[SECOND_COLUMN];
-
-                return true;
-            }
-        }
-
-
-        private string ReadLine()
-        {
-            return _readerStream.ReadLine();
+            _csvWriter.Write();
         }
 
         public void Close()
         {
-            if (_writerStream != null)
+            if (_csvWriter != null)
             {
-                _writerStream.Close();
+                _csvWriter.Close();
             }
-
-            if (_readerStream != null)
+            if (_csvReader != null)
             {
-                _readerStream.Close();
+                _csvReader.Close();
             }
         }
     }
