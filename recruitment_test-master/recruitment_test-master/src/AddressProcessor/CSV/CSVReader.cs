@@ -11,12 +11,10 @@ namespace AddressProcessing.CSV
         {
             return _readerStream = File.OpenText(fileName);
         }
+        
         public void Close()
         {
-            if (_readerStream != null)
-            {
-                _readerStream.Close();
-            }
+             _readerStream?.Close();
         }
 
         public bool Read()

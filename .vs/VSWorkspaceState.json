@@ -1,9 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\LCD Digits",
-    "\\LCD Digits\\LCDDigitsSolution"
+    "\\recruitment_test-master",
+    "\\recruitment_test-master\\recruitment_test-master",
+    "\\recruitment_test-master\\recruitment_test-master\\src",
+    "\\recruitment_test-master\\recruitment_test-master\\src\\AddressProcessor",
+    "\\recruitment_test-master\\recruitment_test-master\\src\\AddressProcessor.Tests",
+    "\\recruitment_test-master\\recruitment_test-master\\src\\AddressProcessor\\CSV"
   ],
-  "SelectedNode": "\\LCD Digits\\LCDDigitsSolution\\LCDDigits.sln",
+  "SelectedNode": "\\recruitment_test-master\\recruitment_test-master\\src\\AddressProcessor\\CSV\\CSVWriter.cs",
   "PreviewInSolutionExplorer": false
 }

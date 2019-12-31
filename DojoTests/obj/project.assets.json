@@ -6589,23 +6589,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\meriemc\\.nuget\\packages\\": {},
+    "C:\\Users\\merie\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\DojoTests\\DojoTests.csproj",
+      "projectUniqueName": "C:\\Users\\merie\\Documents\\GitHub\\ttldojos\\DojoTests\\DojoTests.csproj",
       "projectName": "DojoTests",
-      "projectPath": "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\DojoTests\\DojoTests.csproj",
-      "packagesPath": "C:\\Users\\meriemc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\DojoTests\\obj\\",
+      "projectPath": "C:\\Users\\merie\\Documents\\GitHub\\ttldojos\\DojoTests\\DojoTests.csproj",
+      "packagesPath": "C:\\Users\\merie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\merie\\Documents\\GitHub\\ttldojos\\DojoTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\meriemc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\merie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6618,8 +6618,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\Bowling\\BowlingSolution\\BowlingSolution.csproj": {
-              "projectPath": "C:\\Users\\meriemc\\Documents\\GitHub\\ttldojos\\Bowling\\BowlingSolution\\BowlingSolution.csproj"
+            "C:\\Users\\merie\\Documents\\GitHub\\ttldojos\\Bowling\\BowlingSolution\\BowlingSolution.csproj": {
+              "projectPath": "C:\\Users\\merie\\Documents\\GitHub\\ttldojos\\Bowling\\BowlingSolution\\BowlingSolution.csproj"
             }
           }
         }
@@ -6665,7 +6665,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

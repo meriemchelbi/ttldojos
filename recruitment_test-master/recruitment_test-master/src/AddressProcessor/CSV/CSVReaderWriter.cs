@@ -25,17 +25,17 @@ namespace AddressProcessing.CSV
         public object Open(string fileName, Mode mode)
         {
             object stream;
-            if (mode == Mode.Read)
+
+            switch (mode)
             {
-                stream = _csvReader.Open(fileName);
-            }
-            else if (mode == Mode.Write)
-            {
-                stream = _csvWriter.Open(fileName);
-            }
-            else
-            {
-                throw new Exception("Unknown file mode for " + fileName);
+                case Mode.Read:
+                    stream = _csvReader.Open(fileName);
+                    break;
+                case Mode.Write:
+                    stream = _csvWriter.Open(fileName);
+                    break;
+                default:
+                    throw new Exception("Unknown file mode for " + fileName);
             }
 
             return stream;
@@ -60,14 +60,8 @@ namespace AddressProcessing.CSV
 
         public void Close()
         {
-            if (_csvWriter != null)
-            {
-                _csvWriter.Close();
-            }
-            if (_csvReader != null)
-            {
-                _csvReader.Close();
-            }
+            _csvWriter?.Close();
+            _csvReader?.Close();
         }
     }
 }

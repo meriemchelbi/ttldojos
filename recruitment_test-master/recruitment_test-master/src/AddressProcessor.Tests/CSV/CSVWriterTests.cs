@@ -18,6 +18,7 @@ namespace Csv.Tests
         public void SetUp()
         {
             _csvWriter = new CSVWriter();
+            _csvWriter.Open(_testFile);
         }
 
         [TearDown]
@@ -29,7 +30,6 @@ namespace Csv.Tests
         [Test]
         public void CloseClosesFile()
         {
-            _csvWriter.Open(_testFile);
             bool wasClosed;
             _csvWriter.Close();
 
@@ -51,7 +51,6 @@ namespace Csv.Tests
         public void OpenOpensFile()
         {
             bool isOpen = false;
-            _csvWriter.Open(_testFile);
             try
             {
                 FileStream fs = new FileStream(_testFile, FileMode.Open);
@@ -65,12 +64,13 @@ namespace Csv.Tests
             Assert.IsTrue(isOpen);
         }
 
-        [Test]
-        public void WriteReturnsTabDelimitedConcatenatedStringInput()
-        {
-            _csvWriter.Open(_testFile);
-            // how do I even test this??
-            _csvWriter.Write();
-        }
+        //[Test]
+        //public void ComposeContactLineReturnsExpectedString()
+        //{
+        //    var stream = new MemoryStream();
+        //    _csvWriter.Write("Test", "my", "stuff");
+        //    var actual = Encoding.UTF8.GetString(stream.ToArray());
+        //    Assert.AreEqual("Test   my  stuff", actual);
+        //}
     }
 }

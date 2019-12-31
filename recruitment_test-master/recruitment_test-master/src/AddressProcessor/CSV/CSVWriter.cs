@@ -1,4 +1,7 @@
 ﻿using System.IO;
+using System.Text;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace AddressProcessing.CSV
 {
@@ -15,31 +18,31 @@ namespace AddressProcessing.CSV
         
         public void Close()
         {
-            if (_streamWriter != null)
-            {
-                _streamWriter.Close();
-            }
+            _streamWriter?.Close();
         }
 
+
+
+        // Using stringbuilder to reduce memory allocation
+        // split out output generation for extensibility
+        // removed dependency on WriteLine as didn't add value as a private method
+        // not sure how to test?
         public void Write(params string[] columns)
         {
-            string outPut = "";
+            var output = ComposeContactLine(columns);
 
-            for (int i = 0; i < columns.Length; i++)
-            {
-                outPut += columns[i];
-                if ((columns.Length - 1) != i)
-                {
-                    outPut += "\t";
-                }
-            }
-
-            WriteLine(outPut);
+            _streamWriter.WriteLine(output);
         }
 
-        private void WriteLine(string line)
+        private string ComposeContactLine(params string[] columns)
         {
-            _streamWriter.WriteLine(line);
+            var builder = new StringBuilder();
+            columns.ToList().ForEach(c => builder.Append($"{c}\t"));
+            
+            var output = builder.ToString().Trim();
+
+            return output;
         }
+
     }
 }

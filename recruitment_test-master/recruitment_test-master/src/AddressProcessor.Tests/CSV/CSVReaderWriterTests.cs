@@ -27,6 +27,7 @@ namespace Csv.Tests
 
         // how do I make tests for open & close independent from one another? Do I return the filestream?
         // Also not happy with returning value from Open to test method
+        // TODO add testing for negative scenario (throw exception)
         [TestCase(CSVReaderWriter.Mode.Read, typeof(StreamReader))]
         [TestCase(CSVReaderWriter.Mode.Write, typeof(StreamWriter))]
         public void OpenCallsCorrectOpenMethod(CSVReaderWriter.Mode mode, Type type)
