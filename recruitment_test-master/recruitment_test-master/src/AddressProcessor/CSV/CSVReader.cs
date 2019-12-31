@@ -19,26 +19,24 @@ namespace AddressProcessing.CSV
             }
         }
 
-        public bool Read(string name, string address)
+        public bool Read()
         {
-            const int FIRST_COLUMN = 0;
-            const int SECOND_COLUMN = 1;
+            // removed reference to Readline private method as doesn't add value splitting it out
+            var columns = _readerStream.ReadLine()?.Split('\t');
 
-            string line;
-            string[] columns;
+            return (columns == null || columns.Length <= 2)
+                ? false
+                : true;
+        }
 
-            char[] separator = { '\t' };
+        // renamed parameters for clarity
+        public bool Read(out string name, out string address)
+        {
+            // removed reference to Readline private method as doesn't add value splitting it out
+            var columns = _readerStream.ReadLine()?.Split('\t');
 
-            line = ReadLine();
-
-            if (line == null)
-            {
-                return false;
-            }
-            // add null checking here- if line null blows up
-            columns = line.Split(separator);
-                       
-            if (columns.Length == 1)
+            // would clarify requirements- do we want to return 'false' if no address provided? Assumed yes to tweaked length validation
+            if (columns == null || columns.Length < 2)
             {
                 name = null;
                 address = null;
@@ -47,55 +45,11 @@ namespace AddressProcessing.CSV
             }
             else
             {
-                name = columns[FIRST_COLUMN];
-                address = columns[SECOND_COLUMN];
+                name = columns[0];
+                address = columns[1];
 
                 return true;
             }
         }
-
-        public bool Read(out string column1, out string column2)
-        {
-            const int FIRST_COLUMN = 0;
-            const int SECOND_COLUMN = 1;
-
-            string line;
-            string[] columns;
-
-            char[] separator = { '\t' };
-
-            line = ReadLine();
-
-            if (line == null)
-            {
-                column1 = null;
-                column2 = null;
-
-                return false;
-            }
-
-            columns = line.Split(separator);
-
-            if (columns.Length == 1)
-            {
-                column1 = null;
-                column2 = null;
-
-                return false;
-            }
-            else
-            {
-                column1 = columns[FIRST_COLUMN];
-                column2 = columns[SECOND_COLUMN];
-
-                return true;
-            }
-        }
-
-        private string ReadLine()
-        {
-            return _readerStream.ReadLine();
-        }
-
     }
 }

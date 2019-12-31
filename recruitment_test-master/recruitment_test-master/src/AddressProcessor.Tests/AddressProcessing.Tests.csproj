@@ -93,6 +93,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="test_data\contactsNoAddress.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="test_data\contactsEmptyLine.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

@@ -43,7 +43,8 @@ namespace AddressProcessing.CSV
 
         public bool Read(string name, string address)
         {
-            return _csvReader.Read(name, address);
+            // removed parameters as not being used. Can't remove from calling method as part of contract
+            return _csvReader.Read();
         }
 
         public bool Read(out string name, out string address)

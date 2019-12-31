@@ -65,65 +65,29 @@ namespace Csv.Tests
             Assert.IsTrue(wasClosed);
         }
 
-        public void ReadReturnsTrueWhenCSVInputNotEmpty()
+        [TestCase(_testFile, true)]
+        [TestCase(@"test_data\emptyContacts.csv", false)]
+        [TestCase(@"test_data\contactsEmptyLine.csv", false)]
+        public void ReadReturnsExpectedResultWithDifferentContactsData(string fileName, bool expectedResult)
         {
-            _csvReader.Open(_testFile);
+            _csvReader.Open(fileName);
 
-            var column1 = string.Empty;
-            var column2 = string.Empty;
+            var result = _csvReader.Read();
 
-            var result = _csvReader.Read(column1, column2);
-
-            Assert.IsTrue(result);
-        }
-
-        [Test]
-        public void ReadReturnsFalseWhenCSVInputEmpty()
-        {
-            _csvReader.Open(@"test_data\emptyContacts.csv");
-
-            var name = string.Empty;
-            var address = string.Empty;
-
-            var result = _csvReader.Read(name, address);
-            _csvReader.Close();
-
-            Assert.IsFalse(result);
+            Assert.AreEqual(expectedResult, result);
         }
                
-        [Test]
-        public void ReadOverloadReturnsExpectedValuesWhenCSVInputNotEmpty()
+        [TestCase(_testFile, true, "Shelby Macias", "3027 Lorem St.|Kokomo|Hertfordshire|L9T 3D5|England")]
+        [TestCase(@"test_data\emptyContacts.csv", false, null, null)]
+        [TestCase(@"test_data\contactsEmptyLine.csv", false, null, null)]
+        public void ReadOverloadReturnsExpectedValuesWhenCSVInputNotEmpty(string fileName, bool expectedResult, string expectedName, string expectedAddress)
         {
-            _csvReader.Open(_testFile);
-            var result = _csvReader.Read(out string column1, out string column2);
-
-            Assert.IsTrue(result);
-            Assert.AreEqual("Shelby Macias", column1);
-            Assert.AreEqual("3027 Lorem St.|Kokomo|Hertfordshire|L9T 3D5|England", column2);
-        }
-
-        [Test]
-        public void ReadOverloadReturnsFalseWhenCSVInputEmpty()
-        {
-            _csvReader.Open(@"test_data\emptyContacts.csv");
-            var result = _csvReader.Read(out string column1, out string column2);
-            _csvReader.Close();
-
-            Assert.IsFalse(result);
-            Assert.AreEqual(null, column1);
-            Assert.AreEqual(null, column2);
-        }
-
-        [Test]
-        public void ReadOverloadReturnsFalseWhenCSVLineBlank()
-        {
-            _csvReader.Open(@"test_data\contactsEmptyLine.csv");
+            _csvReader.Open(fileName);
             var result = _csvReader.Read(out string name, out string address);
-            _csvReader.Close();
 
-            Assert.IsFalse(result);
-            Assert.AreEqual(null, name);
-            Assert.AreEqual(null, address);
+            Assert.AreEqual(expectedResult, result);
+            Assert.AreEqual(expectedName, name);
+            Assert.AreEqual(expectedAddress, address);
         }
     }
 }
