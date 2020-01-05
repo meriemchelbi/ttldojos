@@ -8,6 +8,6 @@
     "\\recruitment_test-master\\recruitment_test-master\\src\\AddressProcessor.Tests",
     "\\recruitment_test-master\\recruitment_test-master\\src\\AddressProcessor\\CSV"
   ],
-  "SelectedNode": "\\recruitment_test-master\\recruitment_test-master\\src\\AddressProcessor\\CSV\\CSVWriter.cs",
+  "SelectedNode": "\\recruitment_test-master\\recruitment_test-master\\src\\AddressProcessor.Tests\\AddressFileProcessorTests.cs",
   "PreviewInSolutionExplorer": false
 }

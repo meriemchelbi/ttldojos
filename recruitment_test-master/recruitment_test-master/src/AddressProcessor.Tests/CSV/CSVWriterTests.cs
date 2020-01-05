@@ -27,43 +27,6 @@ namespace Csv.Tests
             _csvWriter.Close();
         }
 
-        [Test]
-        public void CloseClosesFile()
-        {
-            bool wasClosed;
-            _csvWriter.Close();
-
-            try
-            {
-                FileStream fs = new FileStream(_testFile, FileMode.Open);
-                wasClosed = true;
-                fs.Close();
-            }
-            catch (Exception)
-            {
-                wasClosed = false;
-            }
-
-            Assert.IsTrue(wasClosed);
-        }
-
-        [Test]
-        public void OpenOpensFile()
-        {
-            bool isOpen = false;
-            try
-            {
-                FileStream fs = new FileStream(_testFile, FileMode.Open);
-                fs.Close();
-            }
-            catch (IOException)
-            {
-                isOpen = true;
-            }
-
-            Assert.IsTrue(isOpen);
-        }
-
         //[Test]
         //public void ComposeContactLineReturnsExpectedString()
         //{

@@ -2,26 +2,25 @@
 using System.Text;
 using System.Linq;
 using System.Collections.Generic;
+using AddressProcessing.FileOperations;
 
 namespace AddressProcessing.CSV
 {
-    public class CSVWriter
+    public class CSVWriter : IWriteToFile
     {
         // removed initialisation to null as null by default
         private StreamWriter _streamWriter;
 
-        public StreamWriter Open(string filename)
+        public void Open(string filename)
         {
             FileInfo fileInfo = new FileInfo(filename);
-            return _streamWriter = fileInfo.CreateText();
+            _streamWriter = fileInfo.CreateText();
         }
         
         public void Close()
         {
             _streamWriter?.Close();
         }
-
-
 
         // Using stringbuilder to reduce memory allocation
         // split out output generation for extensibility

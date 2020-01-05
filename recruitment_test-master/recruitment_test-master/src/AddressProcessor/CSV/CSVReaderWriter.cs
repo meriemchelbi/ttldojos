@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AddressProcessing.FileOperations;
+using System;
 
 namespace AddressProcessing.CSV
 {
@@ -9,36 +10,34 @@ namespace AddressProcessing.CSV
 
     public class CSVReaderWriter
     {
-        private readonly CSVReader _csvReader;
-        private readonly CSVWriter _csvWriter;
+        private CSVReader _csvReader;
+        private CSVWriter _csvWriter;
 
         // read only fields so only one file associated with an instance of the ReaderWriter
         public CSVReaderWriter()
         {
-            _csvReader = new CSVReader();
             _csvWriter = new CSVWriter();
         }
 
         [Flags]
         public enum Mode { Read = 1, Write = 2 };
 
-        public object Open(string fileName, Mode mode)
+        public void Open(string fileName, Mode mode)
         {
-            object stream;
+            var fileOpener = new FileOpener();
 
             switch (mode)
             {
                 case Mode.Read:
-                    stream = _csvReader.Open(fileName);
+                    var streamReader = fileOpener.OpenRead(fileName);
+                    _csvReader = new CSVReader(streamReader);
                     break;
                 case Mode.Write:
-                    stream = _csvWriter.Open(fileName);
+                    _csvWriter.Open(fileName);
                     break;
                 default:
                     throw new Exception("Unknown file mode for " + fileName);
             }
-
-            return stream;
         }
 
         public bool Read(string name, string address)

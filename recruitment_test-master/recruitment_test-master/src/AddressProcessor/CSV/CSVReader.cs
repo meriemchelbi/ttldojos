@@ -1,20 +1,20 @@
-﻿using System.IO;
+﻿using AddressProcessing.FileOperations;
+using System.IO;
 
 namespace AddressProcessing.CSV
 {
-    public class CSVReader
+    public class CSVReader : IReadFile
     {
+        public CSVReader(StreamReader streamReader)
+        {
+            _readerStream = streamReader;
+        }
         // removed initialisation to null as null by default
         private StreamReader _readerStream;
 
-        public object Open(string fileName)
-        {
-            return _readerStream = File.OpenText(fileName);
-        }
-        
         public void Close()
         {
-             _readerStream?.Close();
+            _readerStream?.Close();
         }
 
         public bool Read()

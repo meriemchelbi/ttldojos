@@ -59,10 +59,16 @@
     <Compile Include="CSV\CSVReaderWriter For Annotation.cs" />
     <Compile Include="CSV\CSVReaderWriter.cs" />
     <Compile Include="CSV\CSVWriter.cs" />
+    <Compile Include="FileOperations\CloseExtensions.cs" />
+    <Compile Include="FileOperations\FileOpener.cs" />
+    <Compile Include="FileOperations\IOpenFile.cs" />
+    <Compile Include="FileOperations\IReadFile.cs" />
+    <Compile Include="FileOperations\IWriteToFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Address\v1\IMailShot.cs" />
     <Compile Include="Address\v2\IMailShot.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

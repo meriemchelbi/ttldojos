@@ -26,27 +26,36 @@ namespace Csv.Tests
         }
 
         // how do I make tests for open & close independent from one another? Do I return the filestream?
-        // Also not happy with returning value from Open to test method
+        // Should I be mocking the call to the fileOpener here?
         // TODO add testing for negative scenario (throw exception)
-        [TestCase(CSVReaderWriter.Mode.Read, typeof(StreamReader))]
-        [TestCase(CSVReaderWriter.Mode.Write, typeof(StreamWriter))]
-        public void OpenCallsCorrectOpenMethod(CSVReaderWriter.Mode mode, Type type)
+        [TestCase(CSVReaderWriter.Mode.Read)]
+        [TestCase(CSVReaderWriter.Mode.Write)]
+        public void OpenOpensFileInCorrectMode(CSVReaderWriter.Mode mode)
         {
-            var result = _csvReaderWriter.Open(_testFile, mode);
+            bool isOpen = false;
+            _csvReaderWriter.Open(_testFile, mode);
+            
+            try
+            {
+                FileStream fs = new FileStream(_testFile, FileMode.Open);
+                fs.Close();
+            }
+            catch (IOException)
+            {
+                isOpen = true;
+            }
 
-            Assert.AreEqual(type, result.GetType());
+            Assert.IsTrue(isOpen);
         }
         
         [TestCase(CSVReaderWriter.Mode.Read)]
         [TestCase(CSVReaderWriter.Mode.Write)]
-        public void CloseCallsCorrectCloseMethod(CSVReaderWriter.Mode mode)
+        public void CloseClosesFile(CSVReaderWriter.Mode mode)
         {
            
             
         }
-        
        
-        // Tests don't run properly when chained but run fine individually? Do I need to configure the read timeout to be longer?
         [Test]
         public void ReadCallsCorrectReadMethod()
         {
