@@ -1,11 +1,16 @@
-﻿using System.IO;
+﻿using Microsoft.Win32.SafeHandles;
+using System;
+using System.IO;
+using System.Runtime.InteropServices;
 
 namespace AddressProcessing.CSV
 {
-    public class CSVReader
+    public class CSVReader: IDisposable
     {
         // removed initialisation to null as null by default
         private StreamReader _readerStream;
+        private bool _disposed;
+        readonly SafeHandle _handle = new SafeFileHandle(IntPtr.Zero, true);
 
         public object Open(string fileName)
         {
@@ -15,6 +20,7 @@ namespace AddressProcessing.CSV
         public void Close()
         {
              _readerStream?.Close();
+            Dispose();
         }
 
         public bool Read()
@@ -44,6 +50,25 @@ namespace AddressProcessing.CSV
 
                 return true;
             }
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        private void Dispose(bool disposing)
+        {
+            if (_disposed)
+                return;
+
+            if (disposing)
+            {
+                _handle.Dispose();
+            }
+
+            _disposed = true;
         }
     }
 }

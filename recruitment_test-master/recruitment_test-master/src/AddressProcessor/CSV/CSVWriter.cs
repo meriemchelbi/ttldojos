@@ -2,13 +2,18 @@
 using System.Text;
 using System.Linq;
 using System.Collections.Generic;
+using System;
+using Microsoft.Win32.SafeHandles;
+using System.Runtime.InteropServices;
 
 namespace AddressProcessing.CSV
 {
-    public class CSVWriter
+    public class CSVWriter: IDisposable
     {
         // removed initialisation to null as null by default
         private StreamWriter _streamWriter;
+        private bool _disposed;
+        readonly SafeHandle _handle = new SafeFileHandle(IntPtr.Zero, true);
 
         public StreamWriter Open(string filename)
         {
@@ -19,9 +24,8 @@ namespace AddressProcessing.CSV
         public void Close()
         {
             _streamWriter?.Close();
+            Dispose();
         }
-
-
 
         // Using stringbuilder to reduce memory allocation
         // split out output generation for extensibility
@@ -36,6 +40,7 @@ namespace AddressProcessing.CSV
 
         private string ComposeContactLine(params string[] columns)
         {
+            // Could also use .Join (Linq)
             var builder = new StringBuilder();
             columns.ToList().ForEach(c => builder.Append($"{c}\t"));
             
@@ -44,5 +49,23 @@ namespace AddressProcessing.CSV
             return output;
         }
 
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        private void Dispose(bool disposing)
+        {
+            if (_disposed)
+                return;
+
+            if (disposing)
+            {
+                _handle.Dispose();
+            }
+
+            _disposed = true;
+        }
     }
 }
