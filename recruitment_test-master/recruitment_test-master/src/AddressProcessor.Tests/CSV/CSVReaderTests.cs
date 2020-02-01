@@ -1,7 +1,5 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using AddressProcessing.CSV;
-using AddressProcessing.FileOperations;
 using NUnit.Framework;
 
 namespace Csv.Tests
