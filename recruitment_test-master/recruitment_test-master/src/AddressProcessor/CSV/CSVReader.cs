@@ -19,12 +19,8 @@ namespace AddressProcessing.CSV
 
         public bool Read()
         {
-            // removed reference to Readline private method as doesn't add value splitting it out
-            var columns = _readerStream.ReadLine()?.Split('\t');
-
-            return (columns == null || columns.Length <= 2)
-                ? false
-                : true;
+            // simplified by calling other Read method 
+            return Read(out var name, out var address);
         }
 
         // renamed parameters for clarity
@@ -33,8 +29,8 @@ namespace AddressProcessing.CSV
             // removed reference to Readline private method as doesn't add value splitting it out
             var columns = _readerStream.ReadLine()?.Split('\t');
 
-            // would clarify requirements- do we want to return 'false' if no address provided? Assumed yes to tweaked length validation
-            if (columns == null || columns.Length < 2)
+            //would clarify requirements- do we want to return 'false' if no address provided? Assumed yes to tweaked length validation
+            if (columns == null || columns.Length <= 2)
             {
                 name = null;
                 address = null;
