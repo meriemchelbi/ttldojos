@@ -9,8 +9,8 @@ namespace AddressProcessing.CSV
 
     public class CSVReaderWriter
     {
-        private readonly CSVReader _csvReader;
-        private readonly CSVWriter _csvWriter;
+        private readonly IReader _csvReader;
+        private readonly IWriter _csvWriter;
 
         // read only fields so only one file associated with an instance of the ReaderWriter
         public CSVReaderWriter()
@@ -19,26 +19,27 @@ namespace AddressProcessing.CSV
             _csvWriter = new CSVWriter();
         }
 
+        // injecting dependencies for testing
+        public CSVReaderWriter(IWriter csvWriter, IReader csvReader)
+        {
+            _csvReader = csvReader;
+            _csvWriter = csvWriter;
+        }
+
         [Flags]
         public enum Mode { Read = 1, Write = 2 };
 
-        public object Open(string fileName, Mode mode)
+        public bool Open(string fileName, Mode mode)
         {
-            object stream;
-
             switch (mode)
             {
                 case Mode.Read:
-                    stream = _csvReader.Open(fileName);
-                    break;
+                    return _csvReader.Open(fileName);
                 case Mode.Write:
-                    stream = _csvWriter.Open(fileName);
-                    break;
+                    return _csvWriter.Open(fileName);
                 default:
                     throw new Exception("Unknown file mode for " + fileName);
             }
-
-            return stream;
         }
 
         public bool Read(string name, string address)

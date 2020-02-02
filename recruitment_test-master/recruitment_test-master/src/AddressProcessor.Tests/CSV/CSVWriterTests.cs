@@ -64,13 +64,7 @@ namespace Csv.Tests
             Assert.IsTrue(isOpen);
         }
 
-        //[Test]
-        //public void ComposeContactLineReturnsExpectedString()
-        //{
-        //    var stream = new MemoryStream();
-        //    _csvWriter.Write("Test", "my", "stuff");
-        //    var actual = Encoding.UTF8.GetString(stream.ToArray());
-        //    Assert.AreEqual("Test   my  stuff", actual);
-        //}
+        // TODO: add test for Write
+        
     }
 }

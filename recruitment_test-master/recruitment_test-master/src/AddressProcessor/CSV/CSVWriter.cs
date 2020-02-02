@@ -8,17 +8,18 @@ using System.Runtime.InteropServices;
 
 namespace AddressProcessing.CSV
 {
-    public class CSVWriter: IDisposable
+    public class CSVWriter: IWriter, IDisposable
     {
         // removed initialisation to null as null by default
         private StreamWriter _streamWriter;
         private bool _disposed;
         readonly SafeHandle _handle = new SafeFileHandle(IntPtr.Zero, true);
 
-        public StreamWriter Open(string filename)
+        public bool Open(string filename)
         {
             FileInfo fileInfo = new FileInfo(filename);
-            return _streamWriter = fileInfo.CreateText();
+            _streamWriter = fileInfo.CreateText();
+            return true;
         }
         
         public void Close()

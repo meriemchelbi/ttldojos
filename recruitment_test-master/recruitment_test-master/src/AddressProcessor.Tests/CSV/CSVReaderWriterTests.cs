@@ -9,14 +9,15 @@ namespace Csv.Tests
     [TestFixture]
     public class CSVReaderWriterTests
     {
-        // not sure how to test this class without making the Reader & Writer properties public so I can substitute them? Feels wrong
         private const string _testFile = @"test_data\contacts.csv";
         private CSVReaderWriter _csvReaderWriter;
+        private readonly IWriter _csvWriter = Substitute.For<IWriter>();
+        private readonly IReader _csvReader = Substitute.For<IReader>();
 
         [SetUp]
         public void SetUp()
         {
-            _csvReaderWriter = new CSVReaderWriter();
+            _csvReaderWriter = new CSVReaderWriter(_csvWriter, _csvReader);
         }
 
         [TearDown]
@@ -26,49 +27,53 @@ namespace Csv.Tests
         }
 
         // how do I make tests for open & close independent from one another? Do I return the filestream?
-        // Also not happy with returning value from Open to test method
         // TODO add testing for negative scenario (throw exception)
-        [TestCase(CSVReaderWriter.Mode.Read, typeof(StreamReader))]
-        [TestCase(CSVReaderWriter.Mode.Write, typeof(StreamWriter))]
-        public void OpenCallsCorrectOpenMethod(CSVReaderWriter.Mode mode, Type type)
+        [Test]
+        public void OpenCallsCorrectOpenMethod()
         {
-            var result = _csvReaderWriter.Open(_testFile, mode);
+            _csvReader.Open(_testFile).Returns(true);
+            var result = _csvReaderWriter.Open(_testFile, CSVReaderWriter.Mode.Read);
 
-            Assert.AreEqual(type, result.GetType());
+            Assert.IsTrue(result);
         }
-        
-        [TestCase(CSVReaderWriter.Mode.Read)]
-        [TestCase(CSVReaderWriter.Mode.Write)]
-        public void CloseCallsCorrectCloseMethod(CSVReaderWriter.Mode mode)
+
+        [Test]
+        public void OpenWriteModeCallsCSVWriter()
         {
-           
-            
+            _csvWriter.Open(_testFile).Returns(true);
+            var result = _csvReaderWriter.Open(_testFile, CSVReaderWriter.Mode.Write);
+
+            Assert.IsTrue(result);
         }
-        
-       
-        // Tests don't run properly when chained but run fine individually? Do I need to configure the read timeout to be longer?
+
         [Test]
         public void ReadCallsCorrectReadMethod()
         {
+            _csvReader.Read().Returns(true);
+            _csvReader.Read(out string name, out string address).Returns(false);
+            var result = _csvReaderWriter.Read("name", "address");
 
-        }
-
-        [Test]
-        public void ReadOverloadReturnsExpectedValuesWhenCSVInputNotEmpty()
-        {
-
+            Assert.IsTrue(result);
         }
 
         [Test]
         public void ReadOverloadCallsCorrectReadMethod()
         {
+            _csvReader.Read().Returns(false);
+            _csvReader.Read(out Arg.Any<string>(), out Arg.Any<string>())
+                .Returns(x =>
+                {
+                    x[0] = "wibble";
+                    x[1] = "wobble";
+                    return true;
+                });
+            var result = _csvReaderWriter.Read(out var name, out var address);
 
+            Assert.IsTrue(result);
+            Assert.AreEqual(name, "wibble");
+            Assert.AreEqual(address, "wobble");
         }
 
-        [Test]
-        public void WriteCallsCorrectWriteMethod()
-        {
-
-        }
+        //TODO work out whether tests for void methods required for a decorator like this
     }
 }

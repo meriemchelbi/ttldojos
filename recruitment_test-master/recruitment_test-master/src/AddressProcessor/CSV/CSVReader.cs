@@ -5,16 +5,17 @@ using System.Runtime.InteropServices;
 
 namespace AddressProcessing.CSV
 {
-    public class CSVReader: IDisposable
+    public class CSVReader: IReader, IDisposable
     {
         // removed initialisation to null as null by default
         private StreamReader _readerStream;
         private bool _disposed;
         readonly SafeHandle _handle = new SafeFileHandle(IntPtr.Zero, true);
 
-        public object Open(string fileName)
+        public bool Open(string fileName)
         {
-            return _readerStream = File.OpenText(fileName);
+            _readerStream = File.OpenText(fileName);
+            return true;
         }
         
         public void Close()
